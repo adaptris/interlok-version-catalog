@@ -1,7 +1,7 @@
 # interlok-version-catalog
 
 This project is the shared dependency version source for Interlok and the published platform used by downstream projects.
-
+ 
 It provides two related things:
 
 - a Gradle version catalog in [gradle/libs.versions.toml](gradle/libs.versions.toml)
