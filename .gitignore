@@ -1,0 +1,34 @@
+# Standard project files
+.eclipse
+build.properties
+.classpath
+.project
+.idea
+.settings
+*.class
+*~
+.DS_Store
+*.ipr
+*.iml
+*.iws
+*.class
+.gradle
+
+# Project artefacts from building.
+cobertura.ser
+jacoco.exec
+junit.log
+derby.log
+ivy.jar
+build
+activemq-data
+testoutput
+log4j.properties
+*.orig
+target
+bin
+gradle.properties
+out/
+**/src/main/generated/
+unit-tests.properties
+unit-tests.properties.resolved
