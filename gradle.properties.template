@@ -1,0 +1,3 @@
+repoUsername=username
+repoPassword=password
+mavenPublishUrl=https://nexus-whereever-your-repo-is-hosted/repository/maven-releases/

@@ -1,0 +1,183 @@
+[versions]
+interlok = "5.0-SNAPSHOT"
+
+activeMq = "5.19.9"
+activeMqProtobuf = "1.1"
+bouncyCastle = "1.85"
+mysqlDriver = "8.0.33"
+slf4j = "2.0.17"
+log4j2 = "2.25.5"
+jetty = "10.0.26"
+junit = "5.11.4"
+mockito = "4.9.0"
+awaitility = "4.3.0"
+xstream = "1.4.21"
+jakartaValidation = "2.0.2"
+jakartaEl = "3.0.4"
+hibernateValidator = "6.2.5.Final"
+springBootLoader = "2.7.18"
+jsch = "0.2.26"
+mssqlDriver = "9.2.1.jre8"
+derbyDriver = "10.15.2.0"
+jakartaJms = "2.0.3"
+jakartaActivation = "1.2.2"
+commonsIo = "2.19.0"
+commonsNet = "3.11.1"
+commonsPool2 = "2.12.0"
+commonsExec = "1.4.0"
+commonsText = "1.12.0"
+commonsCollections4 = "4.5.0"
+jakartaMail = "1.6.8"
+quartz = "2.5.0"
+hikari = "6.2.1"
+saxon = "12.6"
+xerces = "2.12.2"
+c3p0 = "0.13.0"
+mchangeCommonsJava = "0.3.2"
+flyway = "8.5.13"
+commonsPool = "1.6"
+commonsLang3 = "3.18.0"
+classgraph = "4.8.179"
+expiringMap = "0.5.11"
+javaxServletApi = "4.0.1"
+joost = "0.9.1"
+jettison = "1.5.4"
+opendmkJmxremoteOptionalJar = "1.0-b01-ea"
+opendmkJdmkrtJar = "1.0-b01-ea"
+hibernateJpa = "1.0.2.Final"
+bsh = "2.0b6"
+artemisJmsServer = "2.41.0"
+oro = "2.0.8"
+jruby = "9.4.12.0"
+mockFtpServer = "3.2.0"
+jtds = "1.3.1"
+scala = "2.13.16"
+scalaContinuations = "1.0.3"
+superCsv = "2.4.0"
+csvValidatorJavaApi = "1.4.0"
+gfcSemver = "0.0.5"
+jackson = "2.22.3"
+
+[libraries]
+interlokCore = { module = "com.adaptris:interlok-core", version.ref = "interlok" }
+interlokCoreApt = { module = "com.adaptris:interlok-core-apt", version.ref = "interlok" }
+interlokCommon = { module = "com.adaptris:interlok-common", version.ref = "interlok" }
+interlokStax = { module = "com.adaptris:interlok-stax", version.ref = "interlok" }
+interlokJson = { module = "com.adaptris:interlok-json", version.ref = "interlok" }
+interlokLogging = { module = "com.adaptris:interlok-logging", version.ref = "interlok" }
+interlokBoot = { module = "com.adaptris:interlok-boot", version.ref = "interlok" }
+interlokClient = { module = "com.adaptris:interlok-client", version.ref = "interlok" }
+interlokClientJmx = { module = "com.adaptris:interlok-client-jmx", version.ref = "interlok" }
+interlokStubs = { module = "com.adaptris:interlok-stubs", version.ref = "interlok" }
+interlokLicense = { module = "com.adaptris:interlok-license", version.ref = "interlok" }
+
+slf4jApi = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+slf4jSimple = { module = "org.slf4j:slf4j-simple", version.ref = "slf4j" }
+jclOverSlf4j = { module = "org.slf4j:jcl-over-slf4j", version.ref = "slf4j" }
+julToSlf4j = { module = "org.slf4j:jul-to-slf4j", version.ref = "slf4j" }
+log4j2Api = { module = "org.apache.logging.log4j:log4j-api", version.ref = "log4j2" }
+log4j2Core = { module = "org.apache.logging.log4j:log4j-core", version.ref = "log4j2" }
+log4j2Slf4j2Impl = { module = "org.apache.logging.log4j:log4j-slf4j2-impl", version.ref = "log4j2" }
+log4j2Jcl = { module = "org.apache.logging.log4j:log4j-1.2-api", version.ref = "log4j2" }
+jettyServer = { module = "org.eclipse.jetty:jetty-server", version.ref = "jetty" }
+jettyClient = { module = "org.eclipse.jetty:jetty-client", version.ref = "jetty" }
+jettyServlet = { module = "org.eclipse.jetty:jetty-servlet", version.ref = "jetty" }
+jettyWebapp = { module = "org.eclipse.jetty:jetty-webapp", version.ref = "jetty" }
+jettyUtil = { module = "org.eclipse.jetty:jetty-util", version.ref = "jetty" }
+jettyAnnotations = { module = "org.eclipse.jetty:jetty-annotations", version.ref = "jetty" }
+jettyJndi = { module = "org.eclipse.jetty:jetty-jndi", version.ref = "jetty" }
+jettyJmx = { module = "org.eclipse.jetty:jetty-jmx", version.ref = "jetty" }
+jettyHttp = { module = "org.eclipse.jetty:jetty-http", version.ref = "jetty" }
+jettyIo = { module = "org.eclipse.jetty:jetty-io", version.ref = "jetty" }
+jettySecurity = { module = "org.eclipse.jetty:jetty-security", version.ref = "jetty" }
+jettyPlus = { module = "org.eclipse.jetty:jetty-plus", version.ref = "jetty" }
+jettyXml = { module = "org.eclipse.jetty:jetty-xml", version.ref = "jetty" }
+jettyDeploy = { module = "org.eclipse.jetty:jetty-deploy", version.ref = "jetty" }
+jettyAlpnClient = { module = "org.eclipse.jetty:jetty-alpn-client", version.ref = "jetty" }
+jettyAlpnJavaClient = { module = "org.eclipse.jetty:jetty-alpn-java-client", version.ref = "jetty" }
+jettyAlpnServer = { module = "org.eclipse.jetty:jetty-alpn-server", version.ref = "jetty" }
+jettyAlpnJavaServer = { module = "org.eclipse.jetty:jetty-alpn-java-server", version.ref = "jetty" }
+jettyJaspi = { module = "org.eclipse.jetty:jetty-jaspi", version.ref = "jetty" }
+jettyQuickstart = { module = "org.eclipse.jetty:jetty-quickstart", version.ref = "jetty" }
+jettyRewrite = { module = "org.eclipse.jetty:jetty-rewrite", version.ref = "jetty" }
+jettyServlets = { module = "org.eclipse.jetty:jetty-servlets", version.ref = "jetty" }
+jettyUtilAjax = { module = "org.eclipse.jetty:jetty-util-ajax", version.ref = "jetty" }
+jettyHpack = { module = "org.eclipse.jetty.http2:http2-hpack", version.ref = "jetty" }
+jettyHttp2Common = { module = "org.eclipse.jetty.http2:http2-common", version.ref = "jetty" }
+jettyHttp2Server = { module = "org.eclipse.jetty.http2:http2-server", version.ref = "jetty" }
+jettyHttp2Client = { module = "org.eclipse.jetty.http2:http2-client", version.ref = "jetty" }
+jettyWebsocketJavaxServer = { module = "org.eclipse.jetty.websocket:websocket-javax-server", version.ref = "jetty" }
+jettyWebsocketJavaxClient = { module = "org.eclipse.jetty.websocket:websocket-javax-client", version.ref = "jetty" }
+classgraph = { module = "io.github.classgraph:classgraph", version.ref = "classgraph" }
+expiringMap = { module = "net.jodah:expiringmap", version.ref = "expiringMap" }
+javaxServletApi = { module = "javax.servlet:javax.servlet-api", version.ref = "javaxServletApi" }
+joost = { module = "net.sf.joost:joost", version.ref = "joost" }
+jettison = { module = "org.codehaus.jettison:jettison", version.ref = "jettison" }
+opendmkJmxremoteOptionalJar = { module = "org.glassfish.external:opendmk_jmxremote_optional_jar", version.ref = "opendmkJmxremoteOptionalJar" }
+opendmkJdmkrtJar = { module = "org.glassfish.external:opendmk_jdmkrt_jar", version.ref = "opendmkJdmkrtJar" }
+
+junitJupiterApi = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit" }
+junitJupiterEngine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit" }
+junitJupiterParams = { module = "org.junit.jupiter:junit-jupiter-params", version.ref = "junit" }
+junitPlatformLauncher = { module = "org.junit.platform:junit-platform-launcher", version.ref = "junit" }
+mockitoCore = { module = "org.mockito:mockito-core", version.ref = "mockito" }
+mockitoInline = { module = "org.mockito:mockito-inline", version.ref = "mockito" }
+awaitility = { module = "org.awaitility:awaitility", version.ref = "awaitility" }
+xstream = { module = "com.thoughtworks.xstream:xstream", version.ref = "xstream" }
+jakartaValidationApi = { module = "jakarta.validation:jakarta.validation-api", version.ref = "jakartaValidation" }
+jakartaEl = { module = "org.glassfish:jakarta.el", version.ref = "jakartaEl" }
+hibernateValidator = { module = "org.hibernate.validator:hibernate-validator", version.ref = "hibernateValidator" }
+jakartaJmsApi = { module = "jakarta.jms:jakarta.jms-api", version.ref = "jakartaJms" }
+jakartaActivation = { module = "com.sun.activation:jakarta.activation", version.ref = "jakartaActivation" }
+commonsIo = { module = "commons-io:commons-io", version.ref = "commonsIo" }
+commonsNet = { module = "commons-net:commons-net", version.ref = "commonsNet" }
+commonsPool2 = { module = "org.apache.commons:commons-pool2", version.ref = "commonsPool2" }
+commonsExec = { module = "org.apache.commons:commons-exec", version.ref = "commonsExec" }
+commonsText = { module = "org.apache.commons:commons-text", version.ref = "commonsText" }
+commonsCollections4 = { module = "org.apache.commons:commons-collections4", version.ref = "commonsCollections4" }
+commonsLang3 = { module = "org.apache.commons:commons-lang3", version.ref = "commonsLang3" }
+commonsPool = { module = "commons-pool:commons-pool", version.ref = "commonsPool" }
+jakartaMail = { module = "com.sun.mail:jakarta.mail", version.ref = "jakartaMail" }
+jsch = { module = "com.github.mwiede:jsch", version.ref = "jsch" }
+springBootLoader = { module = "org.springframework.boot:spring-boot-loader", version.ref = "springBootLoader" }
+quartz = { module = "org.quartz-scheduler:quartz", version.ref = "quartz" }
+hikari = { module = "com.zaxxer:HikariCP", version.ref = "hikari" }
+saxon = { module = "net.sf.saxon:Saxon-HE", version.ref = "saxon" }
+xerces = { module = "xerces:xercesImpl", version.ref = "xerces" }
+c3p0 = { module = "com.mchange:c3p0", version.ref = "c3p0" }
+mchangeCommonsJava = { module = "com.mchange:mchange-commons-java", version.ref = "mchangeCommonsJava" }
+flyway = { module = "org.flywaydb:flyway-core", version.ref = "flyway" }
+activeMqClient = { module = "org.apache.activemq:activemq-client", version.ref = "activeMq" }
+activeMqBroker = { module = "org.apache.activemq:activemq-broker", version.ref = "activeMq" }
+activeMqJaas = { module = "org.apache.activemq:activemq-jaas", version.ref = "activeMq" }
+activeMqKahadbStore = { module = "org.apache.activemq:activemq-kahadb-store", version.ref = "activeMq" }
+activeMqProtobuf = { module = "org.apache.activemq.protobuf:activemq-protobuf", version.ref = "activeMqProtobuf" }
+bouncyCastleProvider = { module = "org.bouncycastle:bcprov-jdk18on", version.ref = "bouncyCastle" }
+bouncyCastlePkix = { module = "org.bouncycastle:bcpkix-jdk18on", version.ref = "bouncyCastle" }
+bouncyCastleMail = { module = "org.bouncycastle:bcmail-jdk18on", version.ref = "bouncyCastle" }
+derby = { module = "org.apache.derby:derby", version.ref = "derbyDriver" }
+derbyTools = { module = "org.apache.derby:derbytools", version.ref = "derbyDriver" }
+hibernateJpa = { module = "org.hibernate.javax.persistence:hibernate-jpa-2.1-api", version.ref = "hibernateJpa" }
+bsh = { module = "org.apache-extras.beanshell:bsh", version.ref = "bsh" }
+artemisJmsServer = { module = "org.apache.activemq:artemis-jms-server", version.ref = "artemisJmsServer" }
+oro = { module = "oro:oro", version.ref = "oro" }
+jrubyComplete = { module = "org.jruby:jruby-complete", version.ref = "jruby" }
+mockFtpServer = { module = "org.mockftpserver:MockFtpServer", version.ref = "mockFtpServer" }
+jtds = { module = "net.sourceforge.jtds:jtds", version.ref = "jtds" }
+mysqlJdbc = { module = "mysql:mysql-connector-java", version.ref = "mysqlDriver" }
+mssqlJdbc = { module = "com.microsoft.sqlserver:mssql-jdbc", version.ref = "mssqlDriver" }
+scalaLibrary = { module = "org.scala-lang:scala-library", version.ref = "scala" }
+scalaContinuationsLibrary = { module = "org.scala-lang.plugins:scala-continuations-library_2.13.0-M1", version.ref = "scalaContinuations" }
+csvValidatorJavaApi = { module = "uk.gov.nationalarchives:csv-validator-java-api", version.ref = "csvValidatorJavaApi" }
+gfcSemver = { module = "com.gilt:gfc-semver_2.11", version.ref = "gfcSemver" }
+superCsv = { module = "net.sf.supercsv:super-csv", version.ref = "superCsv" }
+jacksonBom = { module = "com.fasterxml.jackson:jackson-bom", version.ref = "jackson" }
+jacksonDatabind = { module = "com.fasterxml.jackson.core:jackson-databind" }
+
+[bundles]
+interlokCoreRuntime = [
+  "interlokCore",
+  "interlokCommon",
+  "interlokClient",
+  "interlokLogging"
+]

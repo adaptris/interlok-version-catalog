@@ -1,0 +1,161 @@
+plugins {
+  id 'java-platform'
+  id 'maven-publish'
+}
+
+group = 'com.adaptris'
+version = '5.0-SNAPSHOT'
+
+ext {
+  nexusBaseUrl = project.findProperty('nexusBaseUrl') ?: 'https://nexus.adaptris.net/nexus'
+  mavenPublishUrl = project.findProperty('mavenPublishUrl') ?: nexusBaseUrl + '/content/repositories/snapshots'
+  repoUsername = project.findProperty('repoUsername') ?: 'unknown'
+  repoPassword = project.findProperty('repoPassword') ?: 'unknown'
+}
+
+javaPlatform {
+  allowDependencies()
+}
+
+dependencies {
+  constraints {
+    api libs.interlokCore
+    api libs.interlokCoreApt
+    api libs.interlokCommon
+    api libs.interlokStax
+    api libs.interlokJson
+    api libs.interlokLogging
+    api libs.interlokBoot
+    api libs.interlokClient
+    api libs.interlokClientJmx
+    api libs.interlokStubs
+    api libs.interlokLicense
+
+    api libs.slf4jApi
+    api libs.slf4jSimple
+    api libs.jclOverSlf4j
+    api libs.julToSlf4j
+    api libs.log4j2Api
+    api libs.log4j2Core
+    api libs.log4j2Slf4j2Impl
+    api libs.log4j2Jcl
+    api libs.jettyServer
+    api libs.jettyClient
+    api libs.jettyServlet
+    api libs.jettyWebapp
+    api libs.jettyHttp
+    api libs.jettyUtil
+    api libs.jettyAlpnClient
+    api libs.jettyAlpnJavaClient
+    api libs.jettyAlpnServer
+    api libs.jettyAlpnJavaServer
+    api libs.jettyAnnotations
+    api libs.jettyJndi
+    api libs.jettyJmx
+    api libs.jettyDeploy
+    api libs.jettyJaspi
+    api libs.jettyPlus
+    api libs.jettyQuickstart
+    api libs.jettyRewrite
+    api libs.jettyServlets
+    api libs.jettyUtilAjax
+    api libs.jettyHpack
+    api libs.jettyHttp2Common
+    api libs.jettyHttp2Server
+    api libs.jettyHttp2Client
+    api libs.jettyWebsocketJavaxServer
+    api libs.jettyWebsocketJavaxClient
+    api libs.junitJupiterApi
+    api libs.junitJupiterEngine
+    api libs.junitJupiterParams
+    api libs.mockitoCore
+    api libs.mockitoInline
+    api libs.awaitility
+    api libs.xstream
+    api libs.jakartaValidationApi
+    api libs.jakartaEl
+    api libs.hibernateValidator
+    api libs.jakartaJmsApi
+    api libs.jakartaActivation
+    api libs.commonsIo
+    api libs.commonsNet
+    api libs.commonsPool2
+    api libs.commonsExec
+    api libs.commonsText
+    api libs.commonsCollections4
+    api libs.commonsLang3
+    api libs.commonsPool
+    api libs.jakartaMail
+    api libs.jsch
+    api libs.springBootLoader
+    api libs.quartz
+    api libs.hikari
+    api libs.saxon
+    api libs.xerces
+    api libs.c3p0
+    api libs.mchangeCommonsJava
+    api libs.flyway
+    api libs.classgraph
+    api libs.expiringMap
+    api libs.javaxServletApi
+    api libs.joost
+    api libs.jettison
+    api libs.opendmkJmxremoteOptionalJar
+    api libs.opendmkJdmkrtJar
+    api libs.activeMqClient
+    api libs.activeMqBroker
+    api libs.activeMqJaas
+    api libs.activeMqKahadbStore
+    api libs.activeMqProtobuf
+    api libs.bouncyCastleProvider
+    api libs.bouncyCastlePkix
+    api libs.bouncyCastleMail
+    api libs.derby
+    api libs.derbyTools
+    api libs.hibernateJpa
+    api libs.bsh
+    api libs.artemisJmsServer
+    api libs.oro
+    api libs.jrubyComplete
+    api libs.mockFtpServer
+    api libs.jtds
+    api libs.mysqlJdbc
+    api libs.mssqlJdbc
+    api libs.scalaLibrary
+    api libs.scalaContinuationsLibrary
+    api libs.csvValidatorJavaApi
+    api libs.gfcSemver
+    api libs.superCsv
+    api libs.jacksonBom
+    api libs.jacksonDatabind
+  }
+}
+
+publishing {
+  publications {
+    mavenJava(MavenPublication) {
+      from components.javaPlatform
+      artifactId = 'interlok-version-catalog'
+
+      pom.withXml {
+        asNode().appendNode("name", "Interlok Version Catalog")
+        asNode().appendNode("description", "Central version catalog and BOM for Interlok dependencies")
+        asNode().appendNode("url", "https://interlok.adaptris.net/interlok-docs/#/")
+        def properties = asNode().appendNode("properties")
+        properties.appendNode("target", "3.8.0+")
+        properties.appendNode("license", "false")
+        properties.appendNode("readme", "https://github.com/adaptris/interlok/raw/develop/README.md")
+        properties.appendNode("repository", "https://github.com/adaptris/interlok")
+      }
+    }
+  }
+  repositories {
+    maven {
+      credentials {
+        username repoUsername
+        password repoPassword
+      }
+      url mavenPublishUrl
+    }
+  }
+}
