@@ -54,7 +54,7 @@ jtds = "1.3.1"
 scala = "2.13.16"
 scalaContinuations = "1.0.3"
 superCsv = "2.4.0"
-csvValidatorJavaApi = "1.4.0"
+csvValidatorJavaApi = "1.4.3"
 gfcSemver = "0.0.5"
 jackson = "2.22.3"
 
