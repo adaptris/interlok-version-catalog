@@ -1,7 +1,7 @@
 [versions]
 interlok = "5.0-SNAPSHOT"
 
-activeMq = "5.19.9"
+activeMq = "6.3.2"
 activeMqProtobuf = "1.1"
 bouncyCastle = "1.85"
 mysqlDriver = "8.0.33"
