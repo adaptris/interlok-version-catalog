@@ -15,6 +15,10 @@ jobs:
     uses: interlok-tooling/reusable-workflows/.github/workflows/gradle-publish.yml@main
     with:
       disable-dependency-check: true
+      disable-spotbugs-report-upload: true
+      disable-jacoco-report-upload: true
+      disable-codecov: true
+      disable-sonar-analysis: true
     secrets:
       NEXUS_REPO_PASSWORD: ${{ secrets.NEXUS_REPO_PASSWORD }}
       NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
