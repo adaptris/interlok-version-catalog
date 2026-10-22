@@ -6,6 +6,11 @@ plugins {
 group = 'com.adaptris'
 version = '5.0-SNAPSHOT'
 
+tasks.register('test') {
+  group = 'verification'
+  description = 'No-op test task for shared publishing workflow compatibility; this platform has no tests.'
+}
+
 ext {
   nexusBaseUrl = project.findProperty('nexusBaseUrl') ?: 'https://nexus.adaptris.net/nexus'
   mavenPublishUrl = project.findProperty('mavenPublishUrl') ?: nexusBaseUrl + '/content/repositories/snapshots'

@@ -145,6 +145,8 @@ That single change will flow to any downstream repo using the platform.
 
 This project is intended to be published as an artifact to the shared Nexus repository so other Interlok repos can consume it.
 
+The project defines a no-op `test` task because it has no executable tests. This keeps it compatible with the shared publishing workflow, which invokes `publish -x test`.
+
 Typical flow:
 
 1. update the shared version catalog as needed
