@@ -1,9 +1,10 @@
 [versions]
 interlok = "5.0-SNAPSHOT"
 
-activeMq = "5.19.9"
+activeMq = "5.19.11"
 activeMqProtobuf = "1.1"
-bouncyCastle = "1.85"
+bouncyCastle = "1.86"
+asm = "9.11.1"
 mysqlDriver = "8.0.33"
 slf4j = "2.0.17"
 log4j2 = "2.25.5"
@@ -14,7 +15,7 @@ awaitility = "4.3.0"
 xstream = "1.4.21"
 jakartaValidation = "2.0.2"
 jakartaEl = "3.0.4"
-hibernateValidator = "6.2.5.Final"
+hibernateValidator = "6.2.6.Final"
 springBootLoader = "2.7.18"
 jsch = "0.2.26"
 mssqlDriver = "9.2.1.jre8"
@@ -32,8 +33,8 @@ quartz = "2.5.0"
 hikari = "6.2.1"
 saxon = "12.6"
 xerces = "2.12.2"
-c3p0 = "0.13.0"
-mchangeCommonsJava = "0.3.2"
+c3p0 = "0.14.0"
+mchangeCommonsJava = "0.6.0"
 flyway = "8.5.13"
 commonsPool = "1.6"
 commonsLang3 = "3.21.0"
@@ -155,6 +156,9 @@ activeMqProtobuf = { module = "org.apache.activemq.protobuf:activemq-protobuf", 
 bouncyCastleProvider = { module = "org.bouncycastle:bcprov-jdk18on", version.ref = "bouncyCastle" }
 bouncyCastlePkix = { module = "org.bouncycastle:bcpkix-jdk18on", version.ref = "bouncyCastle" }
 bouncyCastleMail = { module = "org.bouncycastle:bcmail-jdk18on", version.ref = "bouncyCastle" }
+asm = { module = "org.ow2.asm:asm", version.ref = "asm" }
+asmCommons = { module = "org.ow2.asm:asm-commons", version.ref = "asm" }
+asmTree = { module = "org.ow2.asm:asm-tree", version.ref = "asm" }
 derby = { module = "org.apache.derby:derby", version.ref = "derbyDriver" }
 derbyTools = { module = "org.apache.derby:derbytools", version.ref = "derbyDriver" }
 hibernateJpa = { module = "org.hibernate.javax.persistence:hibernate-jpa-2.1-api", version.ref = "hibernateJpa" }

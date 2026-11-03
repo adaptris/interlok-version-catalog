@@ -115,6 +115,9 @@ dependencies {
     api libs.bouncyCastleProvider
     api libs.bouncyCastlePkix
     api libs.bouncyCastleMail
+    api libs.asm
+    api libs.asmCommons
+    api libs.asmTree
     api libs.derby
     api libs.derbyTools
     api libs.hibernateJpa
