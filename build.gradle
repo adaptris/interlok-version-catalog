@@ -23,6 +23,8 @@ javaPlatform {
 }
 
 dependencies {
+  api platform(libs.jacksonBom)
+
   constraints {
     api libs.interlokCore
     api libs.interlokCoreApt
@@ -73,6 +75,7 @@ dependencies {
     api libs.junitJupiterApi
     api libs.junitJupiterEngine
     api libs.junitJupiterParams
+    api libs.junitPlatformLauncher
     api libs.mockitoCore
     api libs.mockitoInline
     api libs.awaitility
@@ -111,7 +114,14 @@ dependencies {
     api libs.activeMqBroker
     api libs.activeMqJaas
     api libs.activeMqKahadbStore
+    api libs.activeMqSpring
+    api libs.activeMqAmqp
+    api libs.activeMqMqtt
+    api libs.activeMqStomp
     api libs.activeMqProtobuf
+    api libs.springBeans
+    api libs.springContext
+    api libs.protonJ
     api libs.bouncyCastleProvider
     api libs.bouncyCastlePkix
     api libs.bouncyCastleMail
@@ -135,7 +145,6 @@ dependencies {
     api libs.gfcSemver
     api libs.superCsv
     api libs.jacksonBom
-    api libs.jacksonDatabind
     api libs.guava
     api libs.fs2Core
     api libs.fs2Io

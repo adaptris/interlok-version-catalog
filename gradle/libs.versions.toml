@@ -3,14 +3,17 @@ interlok = "5.0-SNAPSHOT"
 
 activeMq = "5.19.11"
 activeMqProtobuf = "1.1"
+spring = "5.3.39"
+protonJ = "0.35.0"
 bouncyCastle = "1.86"
 asm = "9.11.1"
 mysqlDriver = "8.0.33"
-slf4j = "2.0.17"
+slf4j = "2.0.20"
 log4j2 = "2.25.5"
 jetty = "10.0.26"
-junit = "5.11.4"
-mockito = "4.9.0"
+junit = "5.13.4"
+junitPlatform = "1.13.4"
+mockito = "5.2.0"
 awaitility = "4.3.0"
 xstream = "1.4.21"
 jakartaValidation = "2.0.2"
@@ -123,7 +126,7 @@ opendmkJdmkrtJar = { module = "org.glassfish.external:opendmk_jdmkrt_jar", versi
 junitJupiterApi = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit" }
 junitJupiterEngine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit" }
 junitJupiterParams = { module = "org.junit.jupiter:junit-jupiter-params", version.ref = "junit" }
-junitPlatformLauncher = { module = "org.junit.platform:junit-platform-launcher", version.ref = "junit" }
+junitPlatformLauncher = { module = "org.junit.platform:junit-platform-launcher", version.ref = "junitPlatform" }
 mockitoCore = { module = "org.mockito:mockito-core", version.ref = "mockito" }
 mockitoInline = { module = "org.mockito:mockito-inline", version.ref = "mockito" }
 awaitility = { module = "org.awaitility:awaitility", version.ref = "awaitility" }
@@ -155,7 +158,14 @@ activeMqClient = { module = "org.apache.activemq:activemq-client", version.ref =
 activeMqBroker = { module = "org.apache.activemq:activemq-broker", version.ref = "activeMq" }
 activeMqJaas = { module = "org.apache.activemq:activemq-jaas", version.ref = "activeMq" }
 activeMqKahadbStore = { module = "org.apache.activemq:activemq-kahadb-store", version.ref = "activeMq" }
+activeMqSpring = { module = "org.apache.activemq:activemq-spring", version.ref = "activeMq" }
+activeMqAmqp = { module = "org.apache.activemq:activemq-amqp", version.ref = "activeMq" }
+activeMqMqtt = { module = "org.apache.activemq:activemq-mqtt", version.ref = "activeMq" }
+activeMqStomp = { module = "org.apache.activemq:activemq-stomp", version.ref = "activeMq" }
 activeMqProtobuf = { module = "org.apache.activemq.protobuf:activemq-protobuf", version.ref = "activeMqProtobuf" }
+springBeans = { module = "org.springframework:spring-beans", version.ref = "spring" }
+springContext = { module = "org.springframework:spring-context", version.ref = "spring" }
+protonJ = { module = "org.apache.qpid:proton-j", version.ref = "protonJ" }
 bouncyCastleProvider = { module = "org.bouncycastle:bcprov-jdk18on", version.ref = "bouncyCastle" }
 bouncyCastlePkix = { module = "org.bouncycastle:bcpkix-jdk18on", version.ref = "bouncyCastle" }
 bouncyCastleMail = { module = "org.bouncycastle:bcmail-jdk18on", version.ref = "bouncyCastle" }
