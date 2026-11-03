@@ -136,6 +136,11 @@ dependencies {
     api libs.superCsv
     api libs.jacksonBom
     api libs.jacksonDatabind
+    api libs.guava
+    api libs.fs2Core
+    api libs.fs2Io
+    api libs.jsonSmart
+    api libs.accessorsSmart
   }
 }
 
