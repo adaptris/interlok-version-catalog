@@ -49,6 +49,12 @@ jettison = "1.5.4"
 opendmkJmxremoteOptionalJar = "1.0-b01-ea"
 opendmkJdmkrtJar = "1.0-b01-ea"
 hibernateJpa = "1.0.2.Final"
+netty = "4.2.19.Final"
+opidjJmsClient = "1.10.0"
+qpidClient = "6.4.0"
+opidJavaBuild = "6.1.7"
+rabbitmqJms = "2.4.0"
+amqpClient = "5.37.0"
 bsh = "2.0b6"
 artemisJmsServer = "2.41.0"
 oro = "2.0.8"
@@ -166,6 +172,14 @@ activeMqProtobuf = { module = "org.apache.activemq.protobuf:activemq-protobuf", 
 springBeans = { module = "org.springframework:spring-beans", version.ref = "spring" }
 springContext = { module = "org.springframework:spring-context", version.ref = "spring" }
 protonJ = { module = "org.apache.qpid:proton-j", version.ref = "protonJ" }
+nettyNativeEpoll = { module = "io.netty:netty-transport-native-epoll", version.ref = "netty" }
+nettyNativeKqueue = { module = "io.netty:netty-transport-native-kqueue", version.ref = "netty" }
+nettyCodecHttp = { module = "io.netty:netty-codec-http", version.ref = "netty" }
+opidJmsClient = { module = "org.apache.qpid:qpid-jms-client", version.ref = "opidjJmsClient" }
+opidJavaBuild = { module = "org.apache.qpid:qpid-java-build", version.ref = "opidJavaBuild" }
+qpidClient = { module = "org.apache.qpid:qpid-client", version.ref = "qpidClient" }
+rabbitmqJms = { module = "com.rabbitmq.jms:rabbitmq-jms", version.ref = "rabbitmqJms" }
+amqpClient = { module = "com.rabbitmq:amqp-client", version.ref = "amqpClient" }
 bouncyCastleProvider = { module = "org.bouncycastle:bcprov-jdk18on", version.ref = "bouncyCastle" }
 bouncyCastlePkix = { module = "org.bouncycastle:bcpkix-jdk18on", version.ref = "bouncyCastle" }
 bouncyCastleMail = { module = "org.bouncycastle:bcmail-jdk18on", version.ref = "bouncyCastle" }
