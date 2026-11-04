@@ -122,6 +122,14 @@ dependencies {
     api libs.springBeans
     api libs.springContext
     api libs.protonJ
+    api libs.nettyNativeEpoll
+    api libs.nettyNativeKqueue
+    api libs.nettyCodecHttp
+    api libs.opidJmsClient
+    api libs.qpidClient
+    api libs.opidJavaBuild
+    api libs.rabbitmqJms
+    api libs.amqpClient
     api libs.bouncyCastleProvider
     api libs.bouncyCastlePkix
     api libs.bouncyCastleMail
