@@ -97,6 +97,7 @@ dependencies {
     api libs.commonsExec
     api libs.commonsText
     api libs.commonsCollections4
+    api libs.commonsCollections
     api libs.commonsLang3
     api libs.commonsPool
     api libs.jakartaMail
