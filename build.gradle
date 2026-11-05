@@ -42,6 +42,11 @@ dependencies {
     api libs.slf4jSimple
     api libs.jclOverSlf4j
     api libs.julToSlf4j
+    api libs.slf4jLog4j12
+    api libs.httpClient
+    api libs.httpClient5
+    api libs.httpAsyncClient
+    api libs.commonsCodec
     api libs.log4j2Api
     api libs.log4j2Core
     api libs.log4j2Slf4j2Impl

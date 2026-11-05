@@ -70,6 +70,10 @@ jackson = "2.22.4"
 guava = "33.8.0-jre"
 fs2 = "3.12.2"
 jsonSmart = "2.6.1"
+httpClient = "4.5.14"
+httpClient5 = "5.6.4"
+httpAsyncClient = "4.1.5"
+commonsCodec="1.23.0"
 
 [libraries]
 interlokCore = { module = "com.adaptris:interlok-core", version.ref = "interlok" }
@@ -88,6 +92,7 @@ slf4jApi = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
 slf4jSimple = { module = "org.slf4j:slf4j-simple", version.ref = "slf4j" }
 jclOverSlf4j = { module = "org.slf4j:jcl-over-slf4j", version.ref = "slf4j" }
 julToSlf4j = { module = "org.slf4j:jul-to-slf4j", version.ref = "slf4j" }
+slf4jLog4j12 = { module = "org.slf4j:slf4j-log4j12", version.ref = "slf4j" }
 log4j2Api = { module = "org.apache.logging.log4j:log4j-api", version.ref = "log4j2" }
 log4j2Core = { module = "org.apache.logging.log4j:log4j-core", version.ref = "log4j2" }
 log4j2Slf4j2Impl = { module = "org.apache.logging.log4j:log4j-slf4j2-impl", version.ref = "log4j2" }
@@ -121,6 +126,10 @@ jettyHttp2Server = { module = "org.eclipse.jetty.http2:http2-server", version.re
 jettyHttp2Client = { module = "org.eclipse.jetty.http2:http2-client", version.ref = "jetty" }
 jettyWebsocketJavaxServer = { module = "org.eclipse.jetty.websocket:websocket-javax-server", version.ref = "jetty" }
 jettyWebsocketJavaxClient = { module = "org.eclipse.jetty.websocket:websocket-javax-client", version.ref = "jetty" }
+httpClient = { module = "org.apache.httpcomponents:httpclient", version.ref = "httpClient" }
+httpClient5 = { module = "org.apache.httpcomponents.client5:httpclient5", version.ref = "httpClient5" }
+httpAsyncClient = { module = "org.apache.httpcomponents:httpasyncclient", version.ref = "httpAsyncClient" }
+commonsCodec = { module = "commons-codec:commons-codec", version.ref = "commonsCodec" }
 classgraph = { module = "io.github.classgraph:classgraph", version.ref = "classgraph" }
 expiringMap = { module = "net.jodah:expiringmap", version.ref = "expiringMap" }
 javaxServletApi = { module = "javax.servlet:javax.servlet-api", version.ref = "javaxServletApi" }
