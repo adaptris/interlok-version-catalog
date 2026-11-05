@@ -91,6 +91,7 @@ dependencies {
     api libs.jakartaJmsApi
     api libs.jakartaActivation
     api libs.commonsIo
+    api libs.commonsCompress
     api libs.commonsNet
     api libs.commonsPool2
     api libs.commonsExec
@@ -163,6 +164,9 @@ dependencies {
     api libs.fs2Io
     api libs.jsonSmart
     api libs.accessorsSmart
+    api libs.jsonOrg
+    api libs.tikaCore
+    api libs.smbj
   }
 }
 
