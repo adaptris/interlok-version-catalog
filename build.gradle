@@ -131,7 +131,16 @@ dependencies {
     api libs.protonJ
     api libs.nettyNativeEpoll
     api libs.nettyNativeKqueue
+    api libs.nettyBuffer
+    api libs.nettyCommon
+    api libs.nettyHandler
+    api libs.nettyTransport
+    api libs.nettyNativeUnixCommon
+    api libs.nettyCodec
     api libs.nettyCodecHttp
+    api libs.nettyCodecSocks
+    api libs.nettyHandlerProxy
+    api libs.nettyCodecHaproxy
     api libs.opidJmsClient
     api libs.qpidClient
     api libs.opidJavaBuild
@@ -148,6 +157,11 @@ dependencies {
     api libs.hibernateJpa
     api libs.bsh
     api libs.artemisJmsServer
+    api libs.artemisServer
+    api libs.jgroups
+    api libs.micrometerCore
+    api libs.commonsBeanutils
+    api libs.commonsConfiguration
     api libs.oro
     api libs.jrubyComplete
     api libs.mockFtpServer

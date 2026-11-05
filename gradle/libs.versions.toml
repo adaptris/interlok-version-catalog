@@ -58,7 +58,7 @@ opidJavaBuild = "6.1.7"
 rabbitmqJms = "2.4.0"
 amqpClient = "5.37.0"
 bsh = "2.0b6"
-artemisJmsServer = "2.41.0"
+artemis = "2.57.0"
 oro = "2.0.8"
 jruby = "9.4.12.0"
 mockFtpServer = "3.2.0"
@@ -70,6 +70,10 @@ csvValidatorJavaApi = "1.4.0"
 gfcSemver = "0.0.5"
 jackson = "2.22.4"
 guava = "33.8.0-jre"
+micrometer = "1.17.2"
+jgroups = "5.4.6.Final"
+commonsBeanutils = "1.11.0"
+commonsConfiguration = "2.15.0"
 fs2 = "3.12.2"
 jsonSmart = "2.6.1"
 jsonOrg = "20250107"
@@ -190,7 +194,16 @@ springContext = { module = "org.springframework:spring-context", version.ref = "
 protonJ = { module = "org.apache.qpid:proton-j", version.ref = "protonJ" }
 nettyNativeEpoll = { module = "io.netty:netty-transport-native-epoll", version.ref = "netty" }
 nettyNativeKqueue = { module = "io.netty:netty-transport-native-kqueue", version.ref = "netty" }
+nettyBuffer = { module = "io.netty:netty-buffer", version.ref = "netty" }
+nettyCommon = { module = "io.netty:netty-common", version.ref = "netty" }
+nettyHandler = { module = "io.netty:netty-handler", version.ref = "netty" }
+nettyTransport = { module = "io.netty:netty-transport", version.ref = "netty" }
+nettyNativeUnixCommon = { module = "io.netty:netty-transport-native-unix-common", version.ref = "netty" }
+nettyCodec = { module = "io.netty:netty-codec", version.ref = "netty" }
 nettyCodecHttp = { module = "io.netty:netty-codec-http", version.ref = "netty" }
+nettyCodecSocks = { module = "io.netty:netty-codec-socks", version.ref = "netty" }
+nettyHandlerProxy = { module = "io.netty:netty-handler-proxy", version.ref = "netty" }
+nettyCodecHaproxy = { module = "io.netty:netty-codec-haproxy", version.ref = "netty" }
 opidJmsClient = { module = "org.apache.qpid:qpid-jms-client", version.ref = "opidjJmsClient" }
 opidJavaBuild = { module = "org.apache.qpid:qpid-java-build", version.ref = "opidJavaBuild" }
 qpidClient = { module = "org.apache.qpid:qpid-client", version.ref = "qpidClient" }
@@ -206,7 +219,12 @@ derby = { module = "org.apache.derby:derby", version.ref = "derbyDriver" }
 derbyTools = { module = "org.apache.derby:derbytools", version.ref = "derbyDriver" }
 hibernateJpa = { module = "org.hibernate.javax.persistence:hibernate-jpa-2.1-api", version.ref = "hibernateJpa" }
 bsh = { module = "org.apache-extras.beanshell:bsh", version.ref = "bsh" }
-artemisJmsServer = { module = "org.apache.activemq:artemis-jms-server", version.ref = "artemisJmsServer" }
+artemisJmsServer = { module = "org.apache.activemq:artemis-jms-server", version.ref = "artemis" }
+artemisServer = { module = "org.apache.activemq:artemis-server", version.ref = "artemis" }
+jgroups = { module = "org.jgroups:jgroups", version.ref = "jgroups" }
+micrometerCore = { module = "io.micrometer:micrometer-core", version.ref = "micrometer" }
+commonsBeanutils = { module = "commons-beanutils:commons-beanutils", version.ref = "commonsBeanutils" }
+commonsConfiguration = { module = "org.apache.commons:commons-configuration2", version.ref = "commonsConfiguration" }
 oro = { module = "oro:oro", version.ref = "oro" }
 jrubyComplete = { module = "org.jruby:jruby-complete", version.ref = "jruby" }
 mockFtpServer = { module = "org.mockftpserver:MockFtpServer", version.ref = "mockFtpServer" }
