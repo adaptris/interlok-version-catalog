@@ -32,6 +32,7 @@ commonsPool2 = "2.12.0"
 commonsExec = "1.4.0"
 commonsText = "1.12.0"
 commonsCollections4 = "4.5.0"
+commonsCollections3 = "3.2.2"
 jakartaMail = "1.6.8"
 quartz = "2.5.0"
 hikari = "6.2.1"
@@ -162,6 +163,7 @@ commonsPool2 = { module = "org.apache.commons:commons-pool2", version.ref = "com
 commonsExec = { module = "org.apache.commons:commons-exec", version.ref = "commonsExec" }
 commonsText = { module = "org.apache.commons:commons-text", version.ref = "commonsText" }
 commonsCollections4 = { module = "org.apache.commons:commons-collections4", version.ref = "commonsCollections4" }
+commonsCollections = { module = "commons-collections:commons-collections", version.ref = "commonsCollections3" }
 commonsLang3 = { module = "org.apache.commons:commons-lang3", version.ref = "commonsLang3" }
 commonsPool = { module = "commons-pool:commons-pool", version.ref = "commonsPool" }
 jakartaMail = { module = "com.sun.mail:jakarta.mail", version.ref = "jakartaMail" }
