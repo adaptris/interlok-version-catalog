@@ -26,6 +26,7 @@ derbyDriver = "10.15.2.0"
 jakartaJms = "2.0.3"
 jakartaActivation = "1.2.2"
 commonsIo = "2.19.0"
+commonsCompress = "1.27.1"
 commonsNet = "3.11.1"
 commonsPool2 = "2.12.0"
 commonsExec = "1.4.0"
@@ -70,10 +71,13 @@ jackson = "2.22.4"
 guava = "33.8.0-jre"
 fs2 = "3.12.2"
 jsonSmart = "2.6.1"
+jsonOrg = "20250107"
 httpClient = "4.5.14"
 httpClient5 = "5.6.4"
 httpAsyncClient = "4.1.5"
 commonsCodec="1.23.0"
+tika = "3.3.2"
+smbj = "0.14.0"
 
 [libraries]
 interlokCore = { module = "com.adaptris:interlok-core", version.ref = "interlok" }
@@ -152,6 +156,7 @@ hibernateValidator = { module = "org.hibernate.validator:hibernate-validator", v
 jakartaJmsApi = { module = "jakarta.jms:jakarta.jms-api", version.ref = "jakartaJms" }
 jakartaActivation = { module = "com.sun.activation:jakarta.activation", version.ref = "jakartaActivation" }
 commonsIo = { module = "commons-io:commons-io", version.ref = "commonsIo" }
+commonsCompress = { module = "org.apache.commons:commons-compress", version.ref = "commonsCompress" }
 commonsNet = { module = "commons-net:commons-net", version.ref = "commonsNet" }
 commonsPool2 = { module = "org.apache.commons:commons-pool2", version.ref = "commonsPool2" }
 commonsExec = { module = "org.apache.commons:commons-exec", version.ref = "commonsExec" }
@@ -218,6 +223,9 @@ fs2Core = { module = "co.fs2:fs2-core_2.13", version.ref = "fs2" }
 fs2Io = { module = "co.fs2:fs2-io_2.13", version.ref = "fs2" }
 jsonSmart = { module = "net.minidev:json-smart", version.ref = "jsonSmart" }
 accessorsSmart = { module = "net.minidev:accessors-smart", version.ref = "jsonSmart" }
+jsonOrg = { module = "org.json:json", version.ref = "jsonOrg" }
+tikaCore = { module = "org.apache.tika:tika-core", version.ref = "tika" }
+smbj = { module = "com.hierynomus:smbj", version.ref = "smbj" }
 
 [bundles]
 interlokCoreRuntime = [
