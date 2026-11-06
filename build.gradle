@@ -37,6 +37,8 @@ dependencies {
     api libs.interlokClientJmx
     api libs.interlokStubs
     api libs.interlokLicense
+    api libs.interlokApacheHttp
+    api libs.interlokMail
 
     api libs.slf4jApi
     api libs.slf4jSimple
@@ -138,6 +140,8 @@ dependencies {
     api libs.nettyNativeUnixCommon
     api libs.nettyCodec
     api libs.nettyCodecHttp
+    api libs.nettyCodecHttp2
+    api libs.nettyResolverDns
     api libs.nettyCodecSocks
     api libs.nettyHandlerProxy
     api libs.nettyCodecHaproxy
@@ -182,6 +186,21 @@ dependencies {
     api libs.jsonOrg
     api libs.tikaCore
     api libs.smbj
+    api libs.msal4j
+    api libs.microsoftGraph
+    api libs.azureIdentity
+    api libs.azureStorageFileDatalake
+    api libs.azureDocumentdb
+    api libs.gson
+    api libs.okhttp
+    api libs.okio
+    api libs.reactorCore
+    api libs.reactorNettyCore
+    api libs.reactorNettyHttp
+    api libs.stax2Api
+    api libs.staxmate
+    api libs.umlDoclet
+    api libs.lombok
   }
 }
 
