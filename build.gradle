@@ -65,6 +65,7 @@ dependencies {
     api libs.nettyBom
     api libs.kaml
     api libs.protobufJava
+    api libs.kafkaClients
     api libs.commonsCodec
     api libs.log4j2Api
     api libs.log4j2Core
@@ -211,6 +212,7 @@ dependencies {
     api libs.gson
     api libs.okhttp
     api libs.okio
+    api libs.okioFakeFileSystem
     api libs.reactorCore
     api libs.reactorNettyCore
     api libs.reactorNettyHttp

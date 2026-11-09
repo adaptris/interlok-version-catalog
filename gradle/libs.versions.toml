@@ -12,6 +12,7 @@ kaml = "0.77.1"
 activeMq = "5.19.11"
 activeMqProtobuf = "1.1"
 protobufJava = "4.35.0"
+kafkaClients = "3.9.2"
 spring = "5.3.39"
 protonJ = "0.35.0"
 bouncyCastle = "1.86"
@@ -222,6 +223,7 @@ avro = { module = "org.apache.avro:avro", version.ref = "avro" }
 nettyBom = { module = "io.netty:netty-bom", version.ref = "netty" }
 kaml = { module = "com.charleskorn.kaml:kaml", version.ref = "kaml" }
 protobufJava = { module = "com.google.protobuf:protobuf-java", version.ref = "protobufJava" }
+kafkaClients = { module = "org.apache.kafka:kafka-clients", version.ref = "kafkaClients" }
 activeMqClient = { module = "org.apache.activemq:activemq-client", version.ref = "activeMq" }
 activeMqBroker = { module = "org.apache.activemq:activemq-broker", version.ref = "activeMq" }
 activeMqJaas = { module = "org.apache.activemq:activemq-jaas", version.ref = "activeMq" }
@@ -298,6 +300,7 @@ azureDocumentdb = { module = "com.microsoft.azure:azure-documentdb", version.ref
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
 okio = { module = "com.squareup.okio:okio", version.ref = "okio" }
+okioFakeFileSystem = { module = "com.squareup.okio:okio-fakefilesystem", version.ref = "okio" }
 reactorCore = { module = "io.projectreactor:reactor-core", version.ref = "reactorCore" }
 reactorNettyCore = { module = "io.projectreactor.netty:reactor-netty-core", version.ref = "reactorNetty" }
 reactorNettyHttp = { module = "io.projectreactor.netty:reactor-netty-http", version.ref = "reactorNetty" }
