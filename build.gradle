@@ -130,6 +130,12 @@ dependencies {
     api libs.c3p0
     api libs.mchangeCommonsJava
     api libs.flyway
+    api libs.cacheApi
+    api libs.cacheRi
+    api libs.ehcache
+    api libs.geode
+    api libs.springWeb
+    api libs.shiro
     api libs.classgraph
     api libs.expiringMap
     api libs.javaxServletApi
