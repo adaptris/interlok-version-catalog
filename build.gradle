@@ -48,6 +48,23 @@ dependencies {
     api libs.httpClient
     api libs.httpClient5
     api libs.httpAsyncClient
+    api libs.awsSdkCore
+    api libs.awsApacheClient
+    api libs.awsSts
+    api libs.awsBom
+    api libs.awsKms
+    api libs.awsS3
+    api libs.awsSns
+    api libs.awsSqs
+    api libs.awsSdkBom
+    api libs.sqsMessagingLib
+    api libs.kotlin
+    api libs.kinesisClient
+    api libs.kinesisProducer
+    api libs.avro
+    api libs.nettyBom
+    api libs.kaml
+    api libs.protobufJava
     api libs.commonsCodec
     api libs.log4j2Api
     api libs.log4j2Core
