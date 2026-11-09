@@ -1,8 +1,17 @@
 [versions]
 interlok = "5.0-SNAPSHOT"
 
+awsSdk = "2.34.3"
+awsSdkBom = "1.12.797"
+sqsMessagingLib = "1.1.0"
+kotlin = "2.1.0"
+kinesisClient = "1.15.2"
+avro = "1.12.2"
+kinesisProducer = "0.15.12"
+kaml = "0.77.1"
 activeMq = "5.19.11"
 activeMqProtobuf = "1.1"
+protobufJava = "4.35.0"
 spring = "5.3.39"
 protonJ = "0.35.0"
 bouncyCastle = "1.86"
@@ -196,6 +205,23 @@ xerces = { module = "xerces:xercesImpl", version.ref = "xerces" }
 c3p0 = { module = "com.mchange:c3p0", version.ref = "c3p0" }
 mchangeCommonsJava = { module = "com.mchange:mchange-commons-java", version.ref = "mchangeCommonsJava" }
 flyway = { module = "org.flywaydb:flyway-core", version.ref = "flyway" }
+awsSdkCore = { module = "software.amazon.awssdk:sdk-core", version.ref = "awsSdk" }
+awsApacheClient = { module = "software.amazon.awssdk:apache-client", version.ref = "awsSdk" }
+awsSts = { module = "software.amazon.awssdk:sts", version.ref = "awsSdk" }
+awsBom = { module = "software.amazon.awssdk:bom", version.ref = "awsSdk" }
+awsKms = { module = "software.amazon.awssdk:kms", version.ref = "awsSdk" }
+awsS3 = { module = "software.amazon.awssdk:s3", version.ref = "awsSdk" }
+awsSns = { module = "software.amazon.awssdk:sns", version.ref = "awsSdk" }
+awsSqs = { module = "software.amazon.awssdk:sqs", version.ref = "awsSdk" }
+awsSdkBom = { module = "com.amazonaws:aws-java-sdk-bom", version.ref = "awsSdkBom" }
+sqsMessagingLib = { module = "com.amazonaws:amazon-sqs-java-messaging-lib", version.ref = "sqsMessagingLib" }
+kotlin = { module = "org.jetbrains.kotlin:kotlin-bom", version.ref = "kotlin" }
+kinesisClient = { module = "com.amazonaws:amazon-kinesis-client", version.ref = "kinesisClient" }
+kinesisProducer = { module = "com.amazonaws:amazon-kinesis-producer", version.ref = "kinesisProducer" }
+avro = { module = "org.apache.avro:avro", version.ref = "avro" }
+nettyBom = { module = "io.netty:netty-bom", version.ref = "netty" }
+kaml = { module = "com.charleskorn.kaml:kaml", version.ref = "kaml" }
+protobufJava = { module = "com.google.protobuf:protobuf-java", version.ref = "protobufJava" }
 activeMqClient = { module = "org.apache.activemq:activemq-client", version.ref = "activeMq" }
 activeMqBroker = { module = "org.apache.activemq:activemq-broker", version.ref = "activeMq" }
 activeMqJaas = { module = "org.apache.activemq:activemq-jaas", version.ref = "activeMq" }
