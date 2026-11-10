@@ -244,6 +244,20 @@ dependencies {
     api libs.lombok
     api libs.javaDriverCore
     api libs.javaDriverMapperRuntime
+    api libs.interlokCsv
+    api libs.interlokApacheHttpAsync
+    api libs.junitJupiter
+    api libs.elasticsearch
+    api libs.elasticsearchXContent
+    api libs.elasticsearchRestHighLevelClient
+    api libs.elasticsearchRestClientSniffer
+    api libs.elasticsearchJava
+    api libs.luceneCore
+    api libs.snakeyaml
+    api libs.jsonPath
+    api libs.jodaTime
+    api libs.commonsCsv
+    api libs.parsson
   }
 }
 
