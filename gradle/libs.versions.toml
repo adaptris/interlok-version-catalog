@@ -25,6 +25,7 @@ kafkaClients = "3.9.2"
 spring = "5.3.39"
 springWeb = "5.3.39"
 protonJ = "0.35.0"
+poi = "5.4.1"
 bouncyCastle = "1.86"
 asm = "9.11.1"
 mysqlDriver = "8.0.33"
@@ -46,7 +47,7 @@ derbyDriver = "10.15.2.0"
 jakartaJms = "2.0.3"
 jakartaActivation = "1.2.2"
 commonsIo = "2.19.0"
-commonsCompress = "1.27.1"
+commonsCompress = "1.28.0"
 commonsNet = "3.11.1"
 commonsPool2 = "2.12.0"
 commonsExec = "1.4.0"
@@ -218,6 +219,8 @@ jakartaJmsApi = { module = "jakarta.jms:jakarta.jms-api", version.ref = "jakarta
 jakartaActivation = { module = "com.sun.activation:jakarta.activation", version.ref = "jakartaActivation" }
 commonsIo = { module = "commons-io:commons-io", version.ref = "commonsIo" }
 commonsCompress = { module = "org.apache.commons:commons-compress", version.ref = "commonsCompress" }
+poi = { module = "org.apache.poi:poi", version.ref = "poi" }
+poiOoxml = { module = "org.apache.poi:poi-ooxml", version.ref = "poi" }
 commonsNet = { module = "commons-net:commons-net", version.ref = "commonsNet" }
 commonsPool2 = { module = "org.apache.commons:commons-pool2", version.ref = "commonsPool2" }
 commonsExec = { module = "org.apache.commons:commons-exec", version.ref = "commonsExec" }
