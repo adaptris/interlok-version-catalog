@@ -120,7 +120,7 @@ reactorCore = "3.8.7"
 reactorNetty = "1.3.7"
 stax2Api = "4.2.2"
 staxmate = "2.1"
-umlDoclet = "2.1.0"
+umlDoclet = "2.2.1"
 lombok = "1.18.38"
 cassandra = "4.17.0"
 
@@ -136,6 +136,8 @@ interlokClient = { module = "com.adaptris:interlok-client", version.ref = "inter
 interlokClientJmx = { module = "com.adaptris:interlok-client-jmx", version.ref = "interlok" }
 interlokStubs = { module = "com.adaptris:interlok-stubs", version.ref = "interlok" }
 interlokLicense = { module = "com.adaptris:interlok-license", version.ref = "interlok" }
+interlokLicensing = { module = "com.adaptris:interlok-licensing", version.ref = "interlok" }
+interlokLicensingStub = { module = "com.adaptris:interlok-licensing-stub", version.ref = "interlok" }
 interlokApacheHttp = { module = "com.adaptris:interlok-apache-http", version.ref = "interlok" }
 interlokMail = { module = "com.adaptris:interlok-mail", version.ref = "interlok" }
 
