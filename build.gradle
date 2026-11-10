@@ -37,6 +37,8 @@ dependencies {
     api libs.interlokClientJmx
     api libs.interlokStubs
     api libs.interlokLicense
+    api libs.interlokLicensing
+    api libs.interlokLicensingStub
     api libs.interlokApacheHttp
     api libs.interlokMail
 
