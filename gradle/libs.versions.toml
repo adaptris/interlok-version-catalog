@@ -5,6 +5,15 @@ awsSdk = "2.34.3"
 awsSdkBom = "1.12.797"
 sqsMessagingLib = "1.1.0"
 kotlin = "2.1.0"
+cxf = "3.6.13"
+neethi = "3.2.4"
+jaxwsApi = "2.3.1"
+jsr181Api = "1.0-MR1"
+jakartaBindApi = "2.3.2"
+saajImpl = "1.5.1"
+saajApi = ":1.3.5"
+javaxJson = "1.1.4"
+yasson = "1.0.1"
 kinesisClient = "1.15.2"
 avro = "1.12.2"
 kinesisProducer = "0.15.12"
@@ -230,6 +239,16 @@ awsSqs = { module = "software.amazon.awssdk:sqs", version.ref = "awsSdk" }
 awsSdkBom = { module = "com.amazonaws:aws-java-sdk-bom", version.ref = "awsSdkBom" }
 sqsMessagingLib = { module = "com.amazonaws:amazon-sqs-java-messaging-lib", version.ref = "sqsMessagingLib" }
 kotlin = { module = "org.jetbrains.kotlin:kotlin-bom", version.ref = "kotlin" }
+cxfFrontend = { module = "org.apache.cxf:cxf-rt-frontend-jaxws", version.ref = "cxf" }
+cxfTransports = { module = "org.apache.cxf:cxf-rt-transports-http", version.ref = "cxf" }
+neethi = { module = "org.apache.neethi:neethi", version.ref = "neethi" }
+jaxwsApi = { module = "javax.xml.ws:jaxws-api", version.ref = "jaxwsApi" }
+jsr181Api = { module = "javax.jws:jsr181-api", version.ref = "jsr181Api" }
+jakartaBindApi = { module = "jakarta.xml.bind:jakarta.xml.bind-api", version.ref = "jakartaBindApi" }
+saajImpl  = { module = "com.sun.xml.messaging.saaj:saaj-impl", version.ref = "saajImpl" }
+saajApi = { module = "javax.xml.soap:saaj-api", version.ref = "saajApi" }
+javaxJson = { module = "org.glassfish:javax.json", version.ref = "javaxJson" }
+yasson = { module = "org.eclipse:yasson", version.ref = "yasson" }
 kinesisClient = { module = "com.amazonaws:amazon-kinesis-client", version.ref = "kinesisClient" }
 kinesisProducer = { module = "com.amazonaws:amazon-kinesis-producer", version.ref = "kinesisProducer" }
 avro = { module = "org.apache.avro:avro", version.ref = "avro" }

@@ -59,6 +59,16 @@ dependencies {
     api libs.awsSdkBom
     api libs.sqsMessagingLib
     api libs.kotlin
+    api libs.cxfFrontend
+    api libs.cxfTransports
+    api libs.neethi
+    api libs.jaxwsApi
+    api libs.jsr181Api
+    api libs.jakartaBindApi
+    api libs.saajImpl
+    api libs.saajApi
+    api libs.javaxJson
+    api libs.yasson
     api libs.kinesisClient
     api libs.kinesisProducer
     api libs.avro
