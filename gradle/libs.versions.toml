@@ -124,6 +124,13 @@ staxmate = "2.1"
 umlDoclet = "2.2.1"
 lombok = "1.18.38"
 cassandra = "4.17.0"
+elasticsearch = "7.17.29"
+lucene = "9.11.1"
+snakeyaml = "2.4"
+jsonPath = "2.10.0"
+jodaTime = "2.13.1"
+commonsCsv = "1.14.0"
+parsson = "1.1.7"
 
 [libraries]
 interlokCore = { module = "com.adaptris:interlok-core", version.ref = "interlok" }
@@ -142,6 +149,8 @@ interlokLicensingStub = { module = "com.adaptris:interlok-licensing-stub", versi
 interlokApacheHttp = { module = "com.adaptris:interlok-apache-http", version.ref = "interlok" }
 interlokMail = { module = "com.adaptris:interlok-mail", version.ref = "interlok" }
 interlokEhcache = { module = "com.adaptris:interlok-ehcache", version.ref = "interlok" }
+interlokCsv = { module = "com.adaptris:interlok-csv", version.ref = "interlok" }
+interlokApacheHttpAsync = { module = "com.adaptris:interlok-apache-http-async", version.ref = "interlok" }
 
 slf4jApi = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
 slf4jSimple = { module = "org.slf4j:slf4j-simple", version.ref = "slf4j" }
@@ -194,6 +203,7 @@ opendmkJmxremoteOptionalJar = { module = "org.glassfish.external:opendmk_jmxremo
 opendmkJdmkrtJar = { module = "org.glassfish.external:opendmk_jdmkrt_jar", version.ref = "opendmkJdmkrtJar" }
 
 junitJupiterApi = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit" }
+junitJupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit" }
 junitJupiterEngine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit" }
 junitJupiterParams = { module = "org.junit.jupiter:junit-jupiter-params", version.ref = "junit" }
 junitPlatformLauncher = { module = "org.junit.platform:junit-platform-launcher", version.ref = "junitPlatform" }
@@ -349,6 +359,17 @@ umlDoclet = { module = "nl.talsmasoftware:umldoclet", version.ref = "umlDoclet" 
 lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
 javaDriverCore = { module = "com.datastax.oss:java-driver-core", version.ref = "cassandra" }
 javaDriverMapperRuntime = { module = "com.datastax.oss:java-driver-mapper-runtime", version.ref = "cassandra" }
+elasticsearch = { module = "org.elasticsearch:elasticsearch", version.ref = "elasticsearch" }
+elasticsearchXContent = { module = "org.elasticsearch:elasticsearch-x-content", version.ref = "elasticsearch" }
+elasticsearchRestHighLevelClient = { module = "org.elasticsearch.client:elasticsearch-rest-high-level-client", version.ref = "elasticsearch" }
+elasticsearchRestClientSniffer = { module = "org.elasticsearch.client:elasticsearch-rest-client-sniffer", version.ref = "elasticsearch" }
+elasticsearchJava = { module = "co.elastic.clients:elasticsearch-java", version.ref = "elasticsearch" }
+luceneCore = { module = "org.apache.lucene:lucene-core", version.ref = "lucene" }
+snakeyaml = { module = "org.yaml:snakeyaml", version.ref = "snakeyaml" }
+jsonPath = { module = "com.jayway.jsonpath:json-path", version.ref = "jsonPath" }
+jodaTime = { module = "joda-time:joda-time", version.ref = "jodaTime" }
+commonsCsv = { module = "org.apache.commons:commons-csv", version.ref = "commonsCsv" }
+parsson = { module = "org.eclipse.parsson:parsson", version.ref = "parsson" }
 
 [bundles]
 interlokCoreRuntime = [
