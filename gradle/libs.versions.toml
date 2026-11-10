@@ -64,6 +64,7 @@ flyway = "8.5.13"
 cacheApi = "1.1.1"
 cacheRi = "1.1.1"
 ehcache = "2.10.9.2"
+ehcacheV3 = "3.10.8"
 geode = "1.15.2"
 shiro = "2.2.1"
 commonsPool = "1.6"
@@ -140,6 +141,7 @@ interlokLicensing = { module = "com.adaptris:interlok-licensing", version.ref = 
 interlokLicensingStub = { module = "com.adaptris:interlok-licensing-stub", version.ref = "interlok" }
 interlokApacheHttp = { module = "com.adaptris:interlok-apache-http", version.ref = "interlok" }
 interlokMail = { module = "com.adaptris:interlok-mail", version.ref = "interlok" }
+interlokEhcache = { module = "com.adaptris:interlok-ehcache", version.ref = "interlok" }
 
 slf4jApi = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
 slf4jSimple = { module = "org.slf4j:slf4j-simple", version.ref = "slf4j" }
@@ -227,6 +229,7 @@ flyway = { module = "org.flywaydb:flyway-core", version.ref = "flyway" }
 cacheApi = { module = "javax.cache:cache-api", version.ref = "cacheApi" }
 cacheRi = { module = "org.jsr107.ri:cache-ri-impl", version.ref = "cacheRi" }
 ehcache = { module = "net.sf.ehcache:ehcache", version.ref = "ehcache" }
+ehcacheV3 = { module = "org.ehcache:ehcache", version.ref = "ehcacheV3" }
 geode = { module = "org.apache.geode:geode-core", version.ref = "geode" }
 shiro = { module = "org.apache.shiro:shiro-core", version.ref = "shiro" }
 springWeb = { module = "org.springframework:spring-web", version.ref = "springWeb" }

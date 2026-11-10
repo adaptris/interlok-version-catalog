@@ -41,6 +41,7 @@ dependencies {
     api libs.interlokLicensingStub
     api libs.interlokApacheHttp
     api libs.interlokMail
+    api libs.interlokEhcache
 
     api libs.slf4jApi
     api libs.slf4jSimple
@@ -145,6 +146,7 @@ dependencies {
     api libs.cacheApi
     api libs.cacheRi
     api libs.ehcache
+    api libs.ehcacheV3
     api libs.geode
     api libs.springWeb
     api libs.shiro
