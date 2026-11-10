@@ -125,6 +125,9 @@ dependencies {
     api libs.jakartaActivation
     api libs.commonsIo
     api libs.commonsCompress
+    api libs.poi
+    api libs.poiOoxml
+    api libs.umlDoclet
     api libs.commonsNet
     api libs.commonsPool2
     api libs.commonsExec
