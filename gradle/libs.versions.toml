@@ -18,13 +18,15 @@ kinesisClient = "1.15.2"
 avro = "1.12.2"
 kinesisProducer = "0.15.12"
 kaml = "0.77.1"
-activeMq = "5.19.11"
+activeMq = "5.19.12"
 activeMqProtobuf = "1.1"
 protobufJava = "4.36.2"
 kafkaClients = "3.9.2"
 spring = "5.3.39"
 springWeb = "5.3.39"
+solace = "10.30.0"
 protonJ = "0.35.0"
+protonJms = "0.12.2"
 poi = "5.4.1"
 bouncyCastle = "1.86"
 asm = "9.11.1"
@@ -45,6 +47,7 @@ jsch = "0.2.26"
 mssqlDriver = "9.2.1.jre8"
 derbyDriver = "10.15.2.0"
 jakartaJms = "2.0.3"
+javaxManagementJ2ee = "1.1.2"
 jakartaJmsV3 = "3.1.0"
 jakartaActivation = "1.2.2"
 commonsIo = "2.19.0"
@@ -71,6 +74,8 @@ geode = "1.15.2"
 shiro = "2.2.1"
 commonsPool = "1.6"
 commonsLang3 = "3.21.0"
+commonsLang2 = "2.6"
+aopAlliance = "1.0"
 classgraph = "4.8.179"
 expiringMap = "0.5.11"
 javaxServletApi = "4.0.1"
@@ -226,6 +231,7 @@ jakartaValidationApi = { module = "jakarta.validation:jakarta.validation-api", v
 jakartaEl = { module = "org.glassfish:jakarta.el", version.ref = "jakartaEl" }
 hibernateValidator = { module = "org.hibernate.validator:hibernate-validator", version.ref = "hibernateValidator" }
 jakartaJmsApi = { module = "jakarta.jms:jakarta.jms-api", version.ref = "jakartaJms" }
+javaxManagementJ2eeApi = { module = "javax.management.j2ee:javax.management.j2ee-api", version.ref = "javaxManagementJ2ee" }
 jakartaJmsV3Api = { module = "jakarta.jms:jakarta.jms-api", version.ref = "jakartaJmsV3" }
 jakartaActivation = { module = "com.sun.activation:jakarta.activation", version.ref = "jakartaActivation" }
 commonsIo = { module = "commons-io:commons-io", version.ref = "commonsIo" }
@@ -239,6 +245,7 @@ commonsText = { module = "org.apache.commons:commons-text", version.ref = "commo
 commonsCollections4 = { module = "org.apache.commons:commons-collections4", version.ref = "commonsCollections4" }
 commonsCollections = { module = "commons-collections:commons-collections", version.ref = "commonsCollections3" }
 commonsLang3 = { module = "org.apache.commons:commons-lang3", version.ref = "commonsLang3" }
+commonsLang2 = { module = "commons-lang:commons-lang", version.ref = "commonsLang2" }
 commonsPool = { module = "commons-pool:commons-pool", version.ref = "commonsPool" }
 jakartaMail = { module = "com.sun.mail:jakarta.mail", version.ref = "jakartaMail" }
 jsch = { module = "com.github.mwiede:jsch", version.ref = "jsch" }
@@ -296,16 +303,24 @@ activeMqStomp = { module = "org.apache.activemq:activemq-stomp", version.ref = "
 activeMqProtobuf = { module = "org.apache.activemq.protobuf:activemq-protobuf", version.ref = "activeMqProtobuf" }
 springBeans = { module = "org.springframework:spring-beans", version.ref = "spring" }
 springContext = { module = "org.springframework:spring-context", version.ref = "spring" }
+springJms = { module = "org.springframework:spring-jms", version.ref = "spring" }
+springCore = { module = "org.springframework:spring-core", version.ref = "spring" }
+springAop = { module = "org.springframework:spring-aop", version.ref = "spring" }
 protonJ = { module = "org.apache.qpid:proton-j", version.ref = "protonJ" }
+protonJms = { module = "org.apache.qpid:proton-jms", version.ref = "protonJms" }
 nettyNativeEpoll = { module = "io.netty:netty-transport-native-epoll", version.ref = "netty" }
 nettyNativeKqueue = { module = "io.netty:netty-transport-native-kqueue", version.ref = "netty" }
 nettyBuffer = { module = "io.netty:netty-buffer", version.ref = "netty" }
 nettyCommon = { module = "io.netty:netty-common", version.ref = "netty" }
 nettyHandler = { module = "io.netty:netty-handler", version.ref = "netty" }
 nettyTransport = { module = "io.netty:netty-transport", version.ref = "netty" }
+nettyTransportNativeKqueue = { module = "io.netty:netty-transport-native-kqueue", version.ref = "netty" }
 nettyNativeUnixCommon = { module = "io.netty:netty-transport-native-unix-common", version.ref = "netty" }
 nettyCodec = { module = "io.netty:netty-codec", version.ref = "netty" }
+nettyCodecBase = { module = "io.netty:netty-codec-base", version.ref = "netty" }
+nettyCodecCompression = { module = "io.netty:netty-codec-compression", version.ref = "netty" }
 nettyCodecHttp = { module = "io.netty:netty-codec-http", version.ref = "netty" }
+nettyResolver = { module = "io.netty:netty-resolver", version.ref = "netty" }
 nettyCodecHttp2 = { module = "io.netty:netty-codec-http2", version.ref = "netty" }
 nettyResolverDns = { module = "io.netty:netty-resolver-dns", version.ref = "netty" }
 nettyCodecSocks = { module = "io.netty:netty-codec-socks", version.ref = "netty" }
@@ -316,6 +331,10 @@ opidJavaBuild = { module = "org.apache.qpid:qpid-java-build", version.ref = "opi
 qpidClient = { module = "org.apache.qpid:qpid-client", version.ref = "qpidClient" }
 rabbitmqJms = { module = "com.rabbitmq.jms:rabbitmq-jms", version.ref = "rabbitmqJms" }
 amqpClient = { module = "com.rabbitmq:amqp-client", version.ref = "amqpClient" }
+solaceCommon = { module = "com.solacesystems:sol-common", version.ref = "solace" }
+solaceJcsmp = { module = "com.solacesystems:sol-jcsmp", version.ref = "solace" }
+solaceJms = { module = "com.solacesystems:sol-jms", version.ref = "solace" }
+aopAlliance = { module = "aopalliance:aopalliance", version.ref = "aopAlliance" }
 bouncyCastleProvider = { module = "org.bouncycastle:bcprov-jdk18on", version.ref = "bouncyCastle" }
 bouncyCastlePkix = { module = "org.bouncycastle:bcpkix-jdk18on", version.ref = "bouncyCastle" }
 bouncyCastleMail = { module = "org.bouncycastle:bcmail-jdk18on", version.ref = "bouncyCastle" }

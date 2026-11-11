@@ -1,5 +1,6 @@
 plugins {
   id 'java-platform'
+  id 'version-catalog'
   id 'maven-publish'
 }
 
@@ -21,6 +22,14 @@ ext {
 javaPlatform {
   allowDependencies()
 }
+
+catalog {
+  versionCatalog {
+    from(files('gradle/libs.versions.toml'))
+  }
+}
+
+components.javaPlatform.addVariantsFromConfiguration(configurations.versionCatalogElements) {}
 
 dependencies {
   api platform(libs.jacksonBom)
@@ -121,8 +130,7 @@ dependencies {
     api libs.jakartaValidationApi
     api libs.jakartaEl
     api libs.hibernateValidator
-    api libs.jakartaJmsV3Api
-    api libs.jakartaJmsApi
+    api libs.javaxManagementJ2eeApi
     api libs.jakartaActivation
     api libs.commonsIo
     api libs.commonsCompress
@@ -136,6 +144,8 @@ dependencies {
     api libs.commonsCollections4
     api libs.commonsCollections
     api libs.commonsLang3
+    api libs.commonsLang2
+    api libs.aopAlliance
     api libs.commonsPool
     api libs.jakartaMail
     api libs.jsch
@@ -172,16 +182,24 @@ dependencies {
     api libs.activeMqProtobuf
     api libs.springBeans
     api libs.springContext
+    api libs.springJms
+    api libs.springCore
+    api libs.springAop
     api libs.protonJ
+    api libs.protonJms
     api libs.nettyNativeEpoll
     api libs.nettyNativeKqueue
     api libs.nettyBuffer
     api libs.nettyCommon
     api libs.nettyHandler
     api libs.nettyTransport
+    api libs.nettyTransportNativeKqueue
     api libs.nettyNativeUnixCommon
     api libs.nettyCodec
+    api libs.nettyCodecBase
+    api libs.nettyCodecCompression
     api libs.nettyCodecHttp
+    api libs.nettyResolver
     api libs.nettyCodecHttp2
     api libs.nettyResolverDns
     api libs.nettyCodecSocks
@@ -191,6 +209,9 @@ dependencies {
     api libs.qpidClient
     api libs.opidJavaBuild
     api libs.rabbitmqJms
+    api libs.solaceCommon
+    api libs.solaceJcsmp
+    api libs.solaceJms
     api libs.amqpClient
     api libs.bouncyCastleProvider
     api libs.bouncyCastlePkix
