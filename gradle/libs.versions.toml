@@ -45,6 +45,7 @@ jsch = "0.2.26"
 mssqlDriver = "9.2.1.jre8"
 derbyDriver = "10.15.2.0"
 jakartaJms = "2.0.3"
+jakartaJmsV3 = "3.1.0"
 jakartaActivation = "1.2.2"
 commonsIo = "2.19.0"
 commonsCompress = "1.28.0"
@@ -108,6 +109,7 @@ gcPubsub = "1.159.0"
 interlokOauthGc = "5.0-SNAPSHOT"
 grpc = "1.85.1"
 geronimoJmsSpec = "1.1.1"
+geronimoJms2Spec = "1.0-alpha-2"
 grpcGcPubsubV1 = "1.159.0"
 gaxGrpc = "2.33.0"
 httpClient = "4.5.14"
@@ -224,6 +226,7 @@ jakartaValidationApi = { module = "jakarta.validation:jakarta.validation-api", v
 jakartaEl = { module = "org.glassfish:jakarta.el", version.ref = "jakartaEl" }
 hibernateValidator = { module = "org.hibernate.validator:hibernate-validator", version.ref = "hibernateValidator" }
 jakartaJmsApi = { module = "jakarta.jms:jakarta.jms-api", version.ref = "jakartaJms" }
+jakartaJmsV3Api = { module = "jakarta.jms:jakarta.jms-api", version.ref = "jakartaJmsV3" }
 jakartaActivation = { module = "com.sun.activation:jakarta.activation", version.ref = "jakartaActivation" }
 commonsIo = { module = "commons-io:commons-io", version.ref = "commonsIo" }
 commonsCompress = { module = "org.apache.commons:commons-compress", version.ref = "commonsCompress" }
@@ -327,6 +330,8 @@ hibernateJpa = { module = "org.hibernate.javax.persistence:hibernate-jpa-2.1-api
 bsh = { module = "org.apache-extras.beanshell:bsh", version.ref = "bsh" }
 artemisJmsServer = { module = "org.apache.activemq:artemis-jms-server", version.ref = "artemis" }
 artemisServer = { module = "org.apache.activemq:artemis-server", version.ref = "artemis" }
+artemisJms3Client = { module = "org.apache.artemis:artemis-jakarta-client", version.ref = "artemis" }
+artemisJms3Server = { module = "org.apache.artemis:artemis-server", version.ref = "artemis" }
 jgroups = { module = "org.jgroups:jgroups", version.ref = "jgroups" }
 micrometerCore = { module = "io.micrometer:micrometer-core", version.ref = "micrometer" }
 commonsBeanutils = { module = "commons-beanutils:commons-beanutils", version.ref = "commonsBeanutils" }
@@ -369,6 +374,7 @@ grpcContext = { module = "io.grpc:grpc-context", version.ref = "grpc" }
 grpcInprocess  = { module = "io.grpc:grpc-inprocess", version.ref = "grpc" }
 protobufJavaUtil = { module = "com.google.protobuf:protobuf-java-util", version.ref = "protobufJava" }
 geronimoJmsSpec = { module = "org.apache.geronimo.specs:geronimo-jms_1.1_spec", version.ref = "geronimoJmsSpec" }
+geronimoJms2Spec = { module = "org.apache.geronimo.specs:geronimo-jms_2.0_spec", version.ref = "geronimoJms2Spec" }
 grpcGcPubsubV1 = { module = "com.google.api.grpc:grpc-google-cloud-pubsub-v1", version.ref = "grpcGcPubsubV1" }
 gaxGrpc = { module = "com.google.api:gax-grpc", version.ref = "gaxGrpc" }
 tikaCore = { module = "org.apache.tika:tika-core", version.ref = "tika" }
