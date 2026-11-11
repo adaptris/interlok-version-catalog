@@ -227,6 +227,20 @@ dependencies {
     api libs.jsonSmart
     api libs.accessorsSmart
     api libs.jsonOrg
+    api libs.gcPubsub
+    api libs.interlokOauthGc
+    api libs.grpcNetty
+    api libs.grpcProtobuf
+    api libs.grpcStub
+    api libs.grpcGoogleApis
+    api libs.grpcServices
+    api libs.grpcAuth
+    api libs.grpcAlts
+    api libs.grpcContext
+    api libs.grpcInprocess
+    api libs.protobufJavaUtil
+    api libs.geronimoJmsSpec
+    api libs.grpcGcPubsubV1
     api libs.tikaCore
     api libs.smbj
     api libs.msal4j

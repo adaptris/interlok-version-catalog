@@ -20,7 +20,7 @@ kinesisProducer = "0.15.12"
 kaml = "0.77.1"
 activeMq = "5.19.11"
 activeMqProtobuf = "1.1"
-protobufJava = "4.35.0"
+protobufJava = "4.36.2"
 kafkaClients = "3.9.2"
 spring = "5.3.39"
 springWeb = "5.3.39"
@@ -104,6 +104,11 @@ commonsConfiguration = "2.15.0"
 fs2 = "3.12.2"
 jsonSmart = "2.6.1"
 jsonOrg = "20250107"
+gcPubsub = "1.159.0"
+interlokOauthGc = "5.0-SNAPSHOT"
+grpc = "1.85.1"
+geronimoJmsSpec = "1.1.1"
+grpcGcPubsubV1 = "1.159.0"
 httpClient = "4.5.14"
 httpClient5 = "5.6.4"
 httpAsyncClient = "4.1.5"
@@ -342,6 +347,20 @@ fs2Io = { module = "co.fs2:fs2-io_2.13", version.ref = "fs2" }
 jsonSmart = { module = "net.minidev:json-smart", version.ref = "jsonSmart" }
 accessorsSmart = { module = "net.minidev:accessors-smart", version.ref = "jsonSmart" }
 jsonOrg = { module = "org.json:json", version.ref = "jsonOrg" }
+gcPubsub = { module = "com.google.cloud:google-cloud-pubsub", version.ref = "gcPubsub" }
+interlokOauthGc = { module = "com.adaptris:interlok-oauth-gcloud", version.ref = "interlokOauthGc" }
+grpcNetty = { module = "io.grpc:grpc-netty", version.ref = "grpc" }
+grpcProtobuf = { module = "io.grpc:grpc-protobuf", version.ref = "grpc" }
+grpcStub = { module = "io.grpc:grpc-stub", version.ref = "grpc" }
+grpcGoogleApis = { module = "io.grpc:grpc-googleapis", version.ref = "grpc" }
+grpcServices = { module = "io.grpc:grpc-services", version.ref = "grpc" }
+grpcAuth = { module = "io.grpc:grpc-auth", version.ref = "grpc" }
+grpcAlts = { module = "io.grpc:grpc-alts", version.ref = "grpc" }
+grpcContext = { module = "io.grpc:grpc-context", version.ref = "grpc" }
+grpcInprocess  = { module = "io.grpc:grpc-inprocess", version.ref = "grpc" }
+protobufJavaUtil = { module = "com.google.protobuf:protobuf-java-util", version.ref = "protobufJava" }
+geronimoJmsSpec = { module = "org.apache.geronimo.specs:geronimo-jms_1.1_spec", version.ref = "geronimoJmsSpec" }
+grpcGcPubsubV1 = { module = "com.google.api.grpc:grpc-google-cloud-pubsub-v1", version.ref = "grpcGcPubsubV1" }
 tikaCore = { module = "org.apache.tika:tika-core", version.ref = "tika" }
 smbj = { module = "com.hierynomus:smbj", version.ref = "smbj" }
 msal4j = { module = "com.microsoft.azure:msal4j", version.ref = "msal4j" }
