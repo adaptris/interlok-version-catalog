@@ -222,6 +222,12 @@ dependencies {
     api libs.superCsv
     api libs.jacksonBom
     api libs.guava
+    api libs.jcloudsCore
+    api libs.jcloudsBlobstore
+    api libs.jcloudsFilesystem
+    api libs.jcloudsAzureblob
+    api libs.jcloudsSts
+    api libs.jaxbApi
     api libs.fs2Core
     api libs.fs2Io
     api libs.jsonSmart
