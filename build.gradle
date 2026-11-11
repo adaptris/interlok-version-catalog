@@ -121,6 +121,7 @@ dependencies {
     api libs.jakartaValidationApi
     api libs.jakartaEl
     api libs.hibernateValidator
+    api libs.jakartaJmsV3Api
     api libs.jakartaJmsApi
     api libs.jakartaActivation
     api libs.commonsIo
@@ -205,6 +206,8 @@ dependencies {
     api libs.bsh
     api libs.artemisJmsServer
     api libs.artemisServer
+    api libs.artemisJms3Client
+    api libs.artemisJms3Server
     api libs.jgroups
     api libs.micrometerCore
     api libs.commonsBeanutils
@@ -246,6 +249,7 @@ dependencies {
     api libs.grpcInprocess
     api libs.protobufJavaUtil
     api libs.geronimoJmsSpec
+    api libs.geronimoJms2Spec
     api libs.grpcGcPubsubV1
     api libs.gaxGrpc
     api libs.tikaCore
