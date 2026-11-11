@@ -122,6 +122,8 @@ azureIdentity = "1.19.0"
 azureStorageFileDatalake = "12.22.0"
 azureDocumentdb = "2.6.5"
 gson = "2.15.0"
+jclouds = "2.7.0"
+jaxb = "2.3.1"
 okhttp = "4.12.0"
 okio = "3.11.0"
 reactorCore = "3.8.7"
@@ -343,6 +345,12 @@ superCsv = { module = "net.sf.supercsv:super-csv", version.ref = "superCsv" }
 jacksonBom = { module = "com.fasterxml.jackson:jackson-bom", version.ref = "jackson" }
 jacksonDatabind = { module = "com.fasterxml.jackson.core:jackson-databind" }
 guava = { module = "com.google.guava:guava", version.ref = "guava" }
+jcloudsCore = { module = "org.apache.jclouds:jclouds-core", version.ref = "jclouds" }
+jcloudsBlobstore = { module = "org.apache.jclouds:jclouds-blobstore", version.ref = "jclouds" }
+jcloudsFilesystem = { module = "org.apache.jclouds.api:filesystem", version.ref = "jclouds" }
+jcloudsAzureblob = { module = "org.apache.jclouds.provider:azureblob", version.ref = "jclouds" }
+jcloudsSts = { module = "org.apache.jclouds.api:sts", version.ref = "jclouds" }
+jaxbApi = { module = "javax.xml.bind:jaxb-api", version.ref = "jaxb" }
 fs2Core = { module = "co.fs2:fs2-core_2.13", version.ref = "fs2" }
 fs2Io = { module = "co.fs2:fs2-io_2.13", version.ref = "fs2" }
 jsonSmart = { module = "net.minidev:json-smart", version.ref = "jsonSmart" }
