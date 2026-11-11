@@ -241,6 +241,7 @@ dependencies {
     api libs.protobufJavaUtil
     api libs.geronimoJmsSpec
     api libs.grpcGcPubsubV1
+    api libs.gaxGrpc
     api libs.tikaCore
     api libs.smbj
     api libs.msal4j
