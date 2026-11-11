@@ -1,6 +1,5 @@
 plugins {
   id 'java-platform'
-  id 'version-catalog'
   id 'maven-publish'
 }
 
@@ -22,14 +21,6 @@ ext {
 javaPlatform {
   allowDependencies()
 }
-
-catalog {
-  versionCatalog {
-    from(files('gradle/libs.versions.toml'))
-  }
-}
-
-components.javaPlatform.addVariantsFromConfiguration(configurations.versionCatalogElements) {}
 
 dependencies {
   api platform(libs.jacksonBom)
