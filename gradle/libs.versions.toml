@@ -34,6 +34,7 @@ mysqlDriver = "8.0.33"
 slf4j = "2.0.20"
 log4j2 = "2.25.5"
 jetty = "10.0.26"
+jolokia = "1.7.2"
 junit = "5.13.4"
 junitPlatform = "1.13.4"
 mockito = "5.2.0"
@@ -206,6 +207,9 @@ jettyHttp2Server = { module = "org.eclipse.jetty.http2:http2-server", version.re
 jettyHttp2Client = { module = "org.eclipse.jetty.http2:http2-client", version.ref = "jetty" }
 jettyWebsocketJavaxServer = { module = "org.eclipse.jetty.websocket:websocket-javax-server", version.ref = "jetty" }
 jettyWebsocketJavaxClient = { module = "org.eclipse.jetty.websocket:websocket-javax-client", version.ref = "jetty" }
+jettyBom = { module = "org.eclipse.jetty:jetty-bom", version.ref = "jetty" }
+jolokiaCore = { module = "org.jolokia:jolokia-core", version.ref = "jolokia" }
+jolokiaJsr160 = { module = "org.jolokia:jolokia-jsr160", version.ref = "jolokia" }
 httpClient = { module = "org.apache.httpcomponents:httpclient", version.ref = "httpClient" }
 httpClient5 = { module = "org.apache.httpcomponents.client5:httpclient5", version.ref = "httpClient5" }
 httpAsyncClient = { module = "org.apache.httpcomponents:httpasyncclient", version.ref = "httpAsyncClient" }

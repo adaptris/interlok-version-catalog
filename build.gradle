@@ -110,6 +110,8 @@ dependencies {
     api libs.jettyHttp2Client
     api libs.jettyWebsocketJavaxServer
     api libs.jettyWebsocketJavaxClient
+    api libs.jolokiaCore
+    api libs.jolokiaJsr160
     api libs.junitJupiterApi
     api libs.junitJupiterEngine
     api libs.junitJupiterParams
