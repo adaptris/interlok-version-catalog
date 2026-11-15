@@ -228,6 +228,7 @@ dependencies {
     api libs.commonsBeanutils
     api libs.commonsConfiguration
     api libs.oro
+    api libs.jruby
     api libs.jrubyComplete
     api libs.mockFtpServer
     api libs.jtds
