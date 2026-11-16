@@ -92,6 +92,7 @@ dependencies {
     api libs.kieCi
     api libs.plexusUtils
     api libs.kieRuleDemo
+    api libs.mongodb
     api libs.commonsCodec
     api libs.log4j2Api
     api libs.log4j2Core
