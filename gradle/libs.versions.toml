@@ -21,7 +21,14 @@ kaml = "0.77.1"
 activeMq = "5.19.12"
 activeMqProtobuf = "1.1"
 protobufJava = "4.36.2"
-kafkaClients = "3.9.2"
+kafka = "3.9.2"
+lz4 = "1.11.4"
+snappy = "1.1.10.11"
+zstdJni = "1.5.7-22"
+jose4j = "0.9.6"
+zookeeper = "3.9.6"
+logback = "1.6.5"
+kafkaJunit5 = "3.2.5"
 spring = "5.3.39"
 springWeb = "5.3.39"
 solace = "10.30.0"
@@ -295,7 +302,15 @@ avro = { module = "org.apache.avro:avro", version.ref = "avro" }
 nettyBom = { module = "io.netty:netty-bom", version.ref = "netty" }
 kaml = { module = "com.charleskorn.kaml:kaml", version.ref = "kaml" }
 protobufJava = { module = "com.google.protobuf:protobuf-java", version.ref = "protobufJava" }
-kafkaClients = { module = "org.apache.kafka:kafka-clients", version.ref = "kafkaClients" }
+kafkaClients = { module = "org.apache.kafka:kafka-clients", version.ref = "kafka" }
+lz4 = { module = "at.yawk.lz4:lz4-java", version.ref = "lz4" }
+snappy = { module = "org.xerial.snappy:snappy-java", version.ref = "snappy" }
+zstdJni = { module = "com.github.luben:zstd-jni", version.ref = "zstdJni" }
+kafka = { module = "org.apache.kafka:kafka_2.13", version.ref = "kafka" }
+jose4j = { module = "org.bitbucket.b_c:jose4j", version.ref = "jose4j" }
+zookeeper = { module = "org.apache.zookeeper:zookeeper", version.ref = "zookeeper" }
+logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+kafkaJunit5 = { module = "com.salesforce.kafka.test:kafka-junit5", version.ref = "kafkaJunit5" }
 activeMqClient = { module = "org.apache.activemq:activemq-client", version.ref = "activeMq" }
 activeMqBroker = { module = "org.apache.activemq:activemq-broker", version.ref = "activeMq" }
 activeMqJaas = { module = "org.apache.activemq:activemq-jaas", version.ref = "activeMq" }

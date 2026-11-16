@@ -79,6 +79,14 @@ dependencies {
     api libs.kaml
     api libs.protobufJava
     api libs.kafkaClients
+    api libs.lz4
+    api libs.snappy
+    api libs.zstdJni
+    api libs.kafka
+    api libs.jose4j
+    api libs.zookeeper
+    api libs.logback
+    api libs.kafkaJunit5
     api libs.commonsCodec
     api libs.log4j2Api
     api libs.log4j2Core
