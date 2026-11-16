@@ -155,6 +155,7 @@ dependencies {
     api libs.aopAlliance
     api libs.commonsPool
     api libs.jakartaMail
+    api libs.greenmail
     api libs.jsch
     api libs.springBootLoader
     api libs.quartz
