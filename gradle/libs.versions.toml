@@ -70,6 +70,7 @@ commonsText = "1.12.0"
 commonsCollections4 = "4.5.0"
 commonsCollections3 = "3.2.2"
 jakartaMail = "1.6.8"
+greenmail = "1.6.11"
 quartz = "2.5.0"
 hikari = "6.2.1"
 saxon = "12.6"
@@ -262,6 +263,7 @@ commonsLang3 = { module = "org.apache.commons:commons-lang3", version.ref = "com
 commonsLang2 = { module = "commons-lang:commons-lang", version.ref = "commonsLang2" }
 commonsPool = { module = "commons-pool:commons-pool", version.ref = "commonsPool" }
 jakartaMail = { module = "com.sun.mail:jakarta.mail", version.ref = "jakartaMail" }
+greenmail = { module = "com.icegreen:greenmail", version.ref = "greenmail" }
 jsch = { module = "com.github.mwiede:jsch", version.ref = "jsch" }
 springBootLoader = { module = "org.springframework.boot:spring-boot-loader", version.ref = "springBootLoader" }
 quartz = { module = "org.quartz-scheduler:quartz", version.ref = "quartz" }
