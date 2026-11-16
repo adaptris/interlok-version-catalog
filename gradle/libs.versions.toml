@@ -38,8 +38,9 @@ springWeb = "5.3.39"
 solace = "10.30.0"
 protonJ = "0.35.0"
 protonJms = "0.12.2"
+pahoMqtt = "1.2.5"
 poi = "5.4.1"
-bouncyCastle = "1.86"
+bouncyCastle = "1.87"
 asm = "9.11.1"
 mysqlDriver = "8.0.33"
 slf4j = "2.0.20"
@@ -62,6 +63,7 @@ jakartaJms = "2.0.3"
 javaxManagementJ2ee = "1.1.2"
 jakartaJmsV3 = "3.1.0"
 jakartaActivation = "1.2.2"
+jta = "1.1"
 commonsIo = "2.19.0"
 commonsCompress = "1.28.0"
 commonsNet = "3.11.1"
@@ -226,6 +228,8 @@ httpClient = { module = "org.apache.httpcomponents:httpclient", version.ref = "h
 httpClient5 = { module = "org.apache.httpcomponents.client5:httpclient5", version.ref = "httpClient5" }
 httpAsyncClient = { module = "org.apache.httpcomponents:httpasyncclient", version.ref = "httpAsyncClient" }
 commonsCodec = { module = "commons-codec:commons-codec", version.ref = "commonsCodec" }
+jta = { module = "javax.transaction:jta", version.ref = "jta" }
+pahoMqtt = { module = "org.eclipse.paho:org.eclipse.paho.client.mqttv3", version.ref = "pahoMqtt" }
 classgraph = { module = "io.github.classgraph:classgraph", version.ref = "classgraph" }
 expiringMap = { module = "net.jodah:expiringmap", version.ref = "expiringMap" }
 javaxServletApi = { module = "javax.servlet:javax.servlet-api", version.ref = "javaxServletApi" }
