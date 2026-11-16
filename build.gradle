@@ -51,6 +51,8 @@ dependencies {
     api libs.httpClient
     api libs.httpClient5
     api libs.httpAsyncClient
+    api libs.jta
+    api libs.pahoMqtt
     api libs.awsSdkCore
     api libs.awsApacheClient
     api libs.awsSts
