@@ -147,6 +147,7 @@ dependencies {
     api libs.poi
     api libs.poiOoxml
     api libs.umlDoclet
+    api libs.javonet
     api libs.commonsNet
     api libs.commonsPool2
     api libs.commonsExec

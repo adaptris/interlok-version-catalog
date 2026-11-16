@@ -153,6 +153,7 @@ reactorNetty = "1.3.7"
 stax2Api = "4.2.2"
 staxmate = "2.1"
 umlDoclet = "2.2.1"
+javonet = "1.4-hf15"
 lombok = "1.18.38"
 cassandra = "4.17.0"
 elasticsearch = "7.17.29"
@@ -449,6 +450,7 @@ reactorNettyHttp = { module = "io.projectreactor.netty:reactor-netty-http", vers
 stax2Api = { module = "org.codehaus.woodstox:stax2-api", version.ref = "stax2Api" }
 staxmate = { module = "org.codehaus.staxmate:stax2", version.ref = "staxmate" }
 umlDoclet = { module = "nl.talsmasoftware:umldoclet", version.ref = "umlDoclet" }
+javonet = { module = "com.javonet:javonet", version.ref = "javonet" }
 lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
 javaDriverCore = { module = "com.datastax.oss:java-driver-core", version.ref = "cassandra" }
 javaDriverMapperRuntime = { module = "com.datastax.oss:java-driver-mapper-runtime", version.ref = "cassandra" }
