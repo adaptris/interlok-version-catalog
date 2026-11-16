@@ -87,6 +87,11 @@ dependencies {
     api libs.zookeeper
     api libs.logback
     api libs.kafkaJunit5
+    api libs.droolsCore
+    api libs.droolsCompiler
+    api libs.kieCi
+    api libs.plexusUtils
+    api libs.kieRuleDemo
     api libs.commonsCodec
     api libs.log4j2Api
     api libs.log4j2Core
