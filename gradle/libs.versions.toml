@@ -4,7 +4,7 @@ interlok = "5.0-SNAPSHOT"
 awsSdk = "2.34.3"
 awsSdkBom = "1.12.797"
 sqsMessagingLib = "1.1.0"
-kotlin = "2.1.0"
+kotlin = "2.2.0"
 cxf = "3.6.13"
 neethi = "3.2.4"
 jaxwsApi = "2.3.1"
@@ -41,6 +41,7 @@ protonJms = "0.12.2"
 pahoMqtt = "1.2.5"
 poi = "5.4.1"
 bouncyCastle = "1.87"
+bouncyCastleLts = "2.73.13"
 asm = "9.11.1"
 mysqlDriver = "8.0.33"
 slf4j = "2.0.20"
@@ -49,7 +50,8 @@ jetty = "10.0.26"
 jolokia = "1.7.2"
 junit = "5.13.4"
 junitPlatform = "1.13.4"
-mockito = "5.2.0"
+mockito = "5.24.0"
+mockitoInline = "5.2.0"
 awaitility = "4.3.0"
 xstream = "1.4.21"
 jakartaValidation = "2.0.2"
@@ -79,7 +81,7 @@ hikari = "6.2.1"
 saxon = "12.6"
 xerces = "2.12.2"
 c3p0 = "0.14.0"
-mchangeCommonsJava = "0.6.0"
+mchangeCommonsJava = "0.6.1"
 flyway = "8.5.13"
 cacheApi = "1.1.1"
 cacheRi = "1.1.1"
@@ -158,11 +160,51 @@ lombok = "1.18.38"
 cassandra = "4.17.0"
 elasticsearch = "7.17.29"
 lucene = "9.11.1"
-snakeyaml = "2.4"
+snakeyaml = "2.5"
 jsonPath = "2.10.0"
 jodaTime = "2.13.1"
 commonsCsv = "1.14.0"
 parsson = "1.1.7"
+jnats = "2.26.4"
+googleAuth = "1.34.0"
+adal4j = "1.6.7"
+undertow = "2.4.4.Final"
+oracleAq = "1.0"
+oracleJdbc14 = "10.2.0.1.0"
+pdfBox = "3.0.8"
+batik = "1.20"
+fop = "2.12"
+pdf2dom = "3.0.0"
+throwingFunction = "1.5.1"
+aspectj = "1.9.24"
+commonsMath3 = "3.6.1"
+ant = "1.10.18"
+sapIdoc = "3.0.12"
+sapJco = "3.0.13"
+hamcrest = "3.0"
+jmock = "2.13.1"
+objenesis = "3.4"
+graalJs = "24.2.1"
+jsonassert = "1.5.3"
+mockserver = "5.15.0"
+commonsFileupload = "1.6.0"
+rhino = "1.8.1"
+swaggerParser = "2.1.34"
+xmlunit = "1.6"
+xmlunit2 = "2.10.0"
+systemLambda = "1.2.1"
+sonic = "8.5.0"
+swift = "SRU2022-9.3.15"
+ibmMq = "9.4.5.1"
+geronimoConnector = "1.0"
+micrometerJvmExtras = "0.2.2"
+atomikos = "3.8.0"
+interlokTibco = "5.0.5-RELEASE"
+tibjms = "6.3.0"
+tibrv = "7.5.1"
+disthub2 = "1.3.1"
+javaxResource = "1.7.1"
+velocity = "2.4"
 
 [libraries]
 interlokCore = { module = "com.adaptris:interlok-core", version.ref = "interlok" }
@@ -245,7 +287,7 @@ junitJupiterEngine = { module = "org.junit.jupiter:junit-jupiter-engine", versio
 junitJupiterParams = { module = "org.junit.jupiter:junit-jupiter-params", version.ref = "junit" }
 junitPlatformLauncher = { module = "org.junit.platform:junit-platform-launcher", version.ref = "junitPlatform" }
 mockitoCore = { module = "org.mockito:mockito-core", version.ref = "mockito" }
-mockitoInline = { module = "org.mockito:mockito-inline", version.ref = "mockito" }
+mockitoInline = { module = "org.mockito:mockito-inline", version.ref = "mockitoInline" }
 awaitility = { module = "org.awaitility:awaitility", version.ref = "awaitility" }
 xstream = { module = "com.thoughtworks.xstream:xstream", version.ref = "xstream" }
 jakartaValidationApi = { module = "jakarta.validation:jakarta.validation-api", version.ref = "jakartaValidation" }
@@ -405,6 +447,8 @@ gfcSemver = { module = "com.gilt:gfc-semver_2.11", version.ref = "gfcSemver" }
 superCsv = { module = "net.sf.supercsv:super-csv", version.ref = "superCsv" }
 jacksonBom = { module = "com.fasterxml.jackson:jackson-bom", version.ref = "jackson" }
 jacksonDatabind = { module = "com.fasterxml.jackson.core:jackson-databind" }
+jacksonCore = { module = "com.fasterxml.jackson.core:jackson-core" }
+jacksonAnnotations = { module = "com.fasterxml.jackson.core:jackson-annotations" }
 guava = { module = "com.google.guava:guava", version.ref = "guava" }
 jcloudsCore = { module = "org.apache.jclouds:jclouds-core", version.ref = "jclouds" }
 jcloudsBlobstore = { module = "org.apache.jclouds:jclouds-blobstore", version.ref = "jclouds" }
@@ -465,6 +509,85 @@ jsonPath = { module = "com.jayway.jsonpath:json-path", version.ref = "jsonPath" 
 jodaTime = { module = "joda-time:joda-time", version.ref = "jodaTime" }
 commonsCsv = { module = "org.apache.commons:commons-csv", version.ref = "commonsCsv" }
 parsson = { module = "org.eclipse.parsson:parsson", version.ref = "parsson" }
+interlokVarsub = { module = "com.adaptris:interlok-varsub", version.ref = "interlok" }
+interlokXinclude = { module = "com.adaptris:interlok-xinclude", version.ref = "interlok" }
+interlokCsvJson = { module = "com.adaptris:interlok-csv-json", version.ref = "interlok" }
+interlokClusterManager = { module = "com.adaptris:interlok-cluster-manager", version.ref = "interlok" }
+interlokProfiler = { module = "com.adaptris:interlok-profiler", version.ref = "interlok" }
+interlokWebspheremq = { module = "com.adaptris:interlok-webspheremq", version.ref = "interlok" }
+interlokSolace = { module = "com.adaptris:interlok-solace", version.ref = "interlok" }
+interlokTibco = { module = "com.adaptris:interlok-tibco", version.ref = "interlokTibco" }
+jnats = { module = "io.nats:jnats", version.ref = "jnats" }
+googleAuth = { module = "com.google.auth:google-auth-library-oauth2-http", version.ref = "googleAuth" }
+adal4j = { module = "com.microsoft.azure:adal4j", version.ref = "adal4j" }
+undertowCore = { module = "io.undertow:undertow-core", version.ref = "undertow" }
+kotlinStdlibJdk7 = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk7", version.ref = "kotlin" }
+kotlinStdlibJdk8 = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8", version.ref = "kotlin" }
+oracleAq = { module = "com.oracle:oracle-aq", version.ref = "oracleAq" }
+oracleJdbc14 = { module = "com.oracle:ojdbc14", version.ref = "oracleJdbc14" }
+pdfBox = { module = "org.apache.pdfbox:pdfbox", version.ref = "pdfBox" }
+pdfBoxTools = { module = "org.apache.pdfbox:pdfbox-tools", version.ref = "pdfBox" }
+fontBox = { module = "org.apache.pdfbox:fontbox", version.ref = "pdfBox" }
+batikExtension = { module = "org.apache.xmlgraphics:batik-extension", version.ref = "batik" }
+batikTranscoder = { module = "org.apache.xmlgraphics:batik-transcoder", version.ref = "batik" }
+batikBridge = { module = "org.apache.xmlgraphics:batik-bridge", version.ref = "batik" }
+batikDom = { module = "org.apache.xmlgraphics:batik-dom", version.ref = "batik" }
+batikSvggen = { module = "org.apache.xmlgraphics:batik-svggen", version.ref = "batik" }
+batikUtil = { module = "org.apache.xmlgraphics:batik-util", version.ref = "batik" }
+fop = { module = "org.apache.xmlgraphics:fop", version.ref = "fop" }
+fopCore = { module = "org.apache.xmlgraphics:fop-core", version.ref = "fop" }
+pdf2dom = { module = "io.github.se-be:pdf2dom", version.ref = "pdf2dom" }
+bouncyCastlePgp = { module = "org.bouncycastle:bcpg-jdk18on", version.ref = "bouncyCastle" }
+bouncyCastleUtil = { module = "org.bouncycastle:bcutil-jdk18on", version.ref = "bouncyCastle" }
+bouncyCastleLtsProvider = { module = "org.bouncycastle:bcprov-lts8on", version.ref = "bouncyCastleLts" }
+throwingFunction = { module = "com.pivovarit:throwing-function", version.ref = "throwingFunction" }
+aspectjRuntime = { module = "org.aspectj:aspectjrt", version.ref = "aspectj" }
+aspectjTools = { module = "org.aspectj:aspectjtools", version.ref = "aspectj" }
+aspectjWeaver = { module = "org.aspectj:aspectjweaver", version.ref = "aspectj" }
+commonsMath3 = { module = "org.apache.commons:commons-math3", version.ref = "commonsMath3" }
+ant = { module = "org.apache.ant:ant", version.ref = "ant" }
+antJunit = { module = "org.apache.ant:ant-junit", version.ref = "ant" }
+sapIdoc = { module = "com.sap:sapidoc3", version.ref = "sapIdoc" }
+sapJco = { module = "com.sap:sapjco3", version.ref = "sapJco" }
+hamcrestCore = { module = "org.hamcrest:hamcrest-core", version.ref = "hamcrest" }
+jmock = { module = "org.jmock:jmock", version.ref = "jmock" }
+jmockImposters = { module = "org.jmock:jmock-imposters", version.ref = "jmock" }
+jmockJunit4 = { module = "org.jmock:jmock-junit4", version.ref = "jmock" }
+jmockJunit5 = { module = "org.jmock:jmock-junit5", version.ref = "jmock" }
+jmockLegacy = { module = "org.jmock:jmock-legacy", version.ref = "jmock" }
+objenesis = { module = "org.objenesis:objenesis", version.ref = "objenesis" }
+graalJs = { module = "org.graalvm.js:js", version.ref = "graalJs" }
+graalJsScriptengine = { module = "org.graalvm.js:js-scriptengine", version.ref = "graalJs" }
+graalSdk = { module = "org.graalvm.sdk:graal-sdk", version.ref = "graalJs" }
+jsonassert = { module = "org.skyscreamer:jsonassert", version.ref = "jsonassert" }
+mockserverNetty = { module = "org.mock-server:mockserver-netty", version.ref = "mockserver" }
+commonsFileupload = { module = "commons-fileupload:commons-fileupload", version.ref = "commonsFileupload" }
+rhino = { module = "org.mozilla:rhino", version.ref = "rhino" }
+swaggerParser = { module = "io.swagger.parser.v3:swagger-parser", version.ref = "swaggerParser" }
+xmlunit = { module = "xmlunit:xmlunit", version.ref = "xmlunit" }
+xmlunitPlaceholders = { module = "org.xmlunit:xmlunit-placeholders", version.ref = "xmlunit2" }
+systemLambda = { module = "com.github.stefanbirkner:system-lambda", version.ref = "systemLambda" }
+sonicChannel = { module = "com.aurea:sonic-channel", version.ref = "sonic" }
+sonicClient = { module = "com.aurea:sonic-client", version.ref = "sonic" }
+sonicCrypto = { module = "com.aurea:sonic-crypto", version.ref = "sonic" }
+sonicXa = { module = "com.aurea:sonic-xa", version.ref = "sonic" }
+sonicXmessage = { module = "com.aurea:sonic-xmessage", version.ref = "sonic" }
+sonicMfcontext = { module = "com.aurea:sonicmq-mfcontext", version.ref = "sonic" }
+sonicMgmtClient = { module = "com.aurea:sonicmq-mgmt-client", version.ref = "sonic" }
+sonicMgmtConfig = { module = "com.aurea:sonicmq-mgmt-config", version.ref = "sonic" }
+sonicSonicMgmtClient = { module = "com.aurea:sonicmq-sonic-mgmt-client", version.ref = "sonic" }
+swift = { module = "com.prowidesoftware:pw-swift-core", version.ref = "swift" }
+ibmMq = { module = "com.ibm.mq:com.ibm.mq.allclient", version.ref = "ibmMq" }
+geronimoConnector = { module = "org.apache.geronimo.specs:geronimo-j2ee-connector_1.6_spec", version.ref = "geronimoConnector" }
+micrometerDatadog = { module = "io.micrometer:micrometer-registry-datadog", version.ref = "micrometer" }
+micrometerPrometheus = { module = "io.micrometer:micrometer-registry-prometheus", version.ref = "micrometer" }
+micrometerJvmExtras = { module = "io.github.mweirauch:micrometer-jvm-extras", version.ref = "micrometerJvmExtras" }
+atomikosJms = { module = "com.atomikos:transactions-jms", version.ref = "atomikos" }
+tibjms = { module = "com.tibco:tibjms", version.ref = "tibjms" }
+tibrv = { module = "com.tibco:tibrv", version.ref = "tibrv" }
+disthub2 = { module = "com.ibm:disthub2", version.ref = "disthub2" }
+javaxResource = { module = "javax.resource:javax.resource-api", version.ref = "javaxResource" }
+velocityEngine = { module = "org.apache.velocity:velocity-engine-core", version.ref = "velocity" }
 
 [bundles]
 interlokCoreRuntime = [
