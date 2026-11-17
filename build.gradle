@@ -399,6 +399,8 @@ dependencies {
     api libs.disthub2
     api libs.javaxResource
     api libs.velocityEngine
+    api libs.jt400
+    api libs.cb2xml
   }
 }
 
