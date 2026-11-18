@@ -242,6 +242,7 @@ dependencies {
     api libs.artemisJms3Client
     api libs.artemisJms3Server
     api libs.jgroups
+    api libs.jmxJmsStubs
     api libs.micrometerCore
     api libs.commonsBeanutils
     api libs.commonsConfiguration
