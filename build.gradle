@@ -202,6 +202,8 @@ dependencies {
     api libs.jjwtApi
     api libs.jjwtImpl
     api libs.jjwtJackson
+    api libs.jgit
+    api libs.jgitSshJsch
     api libs.activeMqClient
     api libs.activeMqBroker
     api libs.activeMqJaas
