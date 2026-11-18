@@ -183,6 +183,25 @@ dependencies {
     api libs.jettison
     api libs.opendmkJmxremoteOptionalJar
     api libs.opendmkJdmkrtJar
+    api libs.jwksRsa
+    api libs.wiremock
+    api libs.jacksonJq
+    api libs.jacksonJqExtra
+    api libs.jslt
+    api libs.jsonLib
+    api libs.xom
+    api libs.joltCore
+    api libs.jsonUtils
+    api libs.everitJson
+    api libs.zjsonPatch
+    api libs.staxon
+    api libs.jsurferCore
+    api libs.jsurferGson
+    api libs.jsurferJackson
+    api libs.jsurferJsonSimple
+    api libs.jjwtApi
+    api libs.jjwtImpl
+    api libs.jjwtJackson
     api libs.activeMqClient
     api libs.activeMqBroker
     api libs.activeMqJaas
