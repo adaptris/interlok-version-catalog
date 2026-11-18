@@ -298,6 +298,7 @@ hibernateValidator = { module = "org.hibernate.validator:hibernate-validator", v
 jakartaJmsApi = { module = "jakarta.jms:jakarta.jms-api", version.ref = "jakartaJms" }
 javaxManagementJ2eeApi = { module = "javax.management.j2ee:javax.management.j2ee-api", version.ref = "javaxManagementJ2ee" }
 jmxJmsStubs = { module = "com.adaptris:interlok-jmx-jms-stubs", version.ref = "interlok" }
+jmxJmsCommon = { module = "com.adaptris:interlok-jmx-jms-common", version.ref = "interlok" }
 jakartaJmsV3Api = { module = "jakarta.jms:jakarta.jms-api", version.ref = "jakartaJmsV3" }
 jakartaActivation = { module = "com.sun.activation:jakarta.activation", version.ref = "jakartaActivation" }
 commonsIo = { module = "commons-io:commons-io", version.ref = "commonsIo" }
