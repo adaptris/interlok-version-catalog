@@ -1,5 +1,5 @@
 [versions]
-interlok = "5.0-SNAPSHOT"
+interlok = "5.0.9B1-RELEASE"
 
 awsSdk = "2.34.3"
 awsSdkBom = "1.12.797"
