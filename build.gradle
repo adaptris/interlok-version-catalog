@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'com.adaptris'
-version = '5.0-SNAPSHOT'
+version = '5.0-SNAPSHOT' //note: this branch is pinned to 5.0-SNAPSHOT, do not change this.
 
 tasks.register('test') {
   group = 'verification'
