@@ -15,6 +15,7 @@ jobs:
     name: Gradle Publish
     uses: interlok-tooling/reusable-workflows/.github/workflows/gradle-publish.yml@main
     with:
+      java-version: '21'
       disable-dependency-check: true
       disable-spotbugs-report-upload: true
       disable-jacoco-report-upload: true
