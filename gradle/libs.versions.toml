@@ -30,6 +30,7 @@ zookeeper = "3.9.7"
 logback = "1.6.5"
 kafkaJunit5 = "3.2.5"
 drools = "7.73.0.Final"
+mvel2 = "2.5.2.Final"
 plexusUtils = "3.5.1"
 kieRuleDemo = "0.0.1-SNAPSHOT"
 mongodb = "3.12.14"
@@ -404,6 +405,7 @@ kafkaJunit5 = { module = "com.salesforce.kafka.test:kafka-junit5", version.ref =
 droolsCore = { module = "org.drools:drools-core", version.ref = "drools" }
 droolsCompiler = { module = "org.drools:drools-compiler", version.ref = "drools" }
 kieCi = { module = "org.kie:kie-ci", version.ref = "drools" }
+mvel2 = { module = "org.mvel:mvel2", version.ref = "mvel2" }
 plexusUtils= { module = "org.codehaus.plexus:plexus-utils", version.ref = "plexusUtils" }
 kieRuleDemo = { module = "com.adaptris:kie-rule-demo", version.ref = "kieRuleDemo" }
 mongodb = { module = "org.mongodb:mongodb-driver", version.ref = "mongodb" }

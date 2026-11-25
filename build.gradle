@@ -92,6 +92,7 @@ dependencies {
     api libs.droolsCore
     api libs.droolsCompiler
     api libs.kieCi
+    api libs.mvel2
     api libs.plexusUtils
     api libs.kieRuleDemo
     api libs.mongodb
